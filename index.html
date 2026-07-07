@@ -135,5 +135,24 @@
         </div>
     </footer>
 
-</body>
+<script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const recipeCards = document.querySelectorAll('.recipe-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filterValue = button.getAttribute('data-filter');
+
+                recipeCards.forEach(card => {
+                    const cardCategories = card.getAttribute('data-categories').split(' ');
+                    
+                    if (filterValue === 'all' || cardCategories.includes(filterValue)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script></body>
 </html>
