@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crispy Lemon Pepper Chicken Thighs - SaverBites</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header style="background-color: #141312; padding: 20px; border-bottom: 2px solid #FFC820;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <h1 style="margin: 0; font-size: 24px;"><a href="../index.html" style="color: #FFFFFF; text-decoration: none; font-family: sans-serif; font-weight: bold;">SAVER<span style="color: #FFC820;">BITES</span></a></h1>
+            <a href="../index.html" style="color: #FFFFFF; text-decoration: none; font-family: monospace;">[ ← Back to Dashboard ]</a>
+        </div>
+    </header>
+
+    <main style="max-width: 800px; margin: 40px auto; padding: 0 20px; font-family: sans-serif; color: #141312;">
+        
+        <span style="font-family: monospace; color: #666; font-weight: bold;">POULTRY / QUICK / UNDER $10</span>
+        <h2 style="font-size: 36px; margin: 10px 0 20px 0; border-bottom: 4px solid #141312; padding-bottom: 10px;">Crispy Lemon Pepper Chicken Thighs</h2>
+
+        <div style="background-color: #F9F8F6; border: 2px solid #141312; padding: 25px; margin-bottom: 30px; box-shadow: 4px 4px 0px #141312;">
+            <h3 style="margin-top: 0; font-family: monospace; text-transform: uppercase; letter-spacing: 1px;">Serving Size Matrix</h3>
+            <p style="font-size: 14px; color: #555;">Adjust the multiplier below to automatically calculate your bulk shopping costs.</p>
+            
+            <div style="margin: 20px 0; display: flex; align-items: center; gap: 15px;">
+                <label for="serving-select" style="font-family: monospace; font-weight: bold;">SCALE RECIPE:</label>
+                <select id="serving-select" style="padding: 8px 12px; font-family: monospace; font-size: 16px; border: 2px solid #141312; background: #FFF; cursor: pointer;">
+                    <option value="1">1 Serving (Solo Solo)</option>
+                    <option value="2">2 Servings (Date Night)</option>
+                    <option value="4" selected>4 Servings (Standard Prep)</option>
+                    <option value="6">6 Servings (Family Batch)</option>
+                </select>
+            </div>
+
+            <div style="background: #FFF; border: 1px dashed #141312; padding: 15px; font-family: monospace;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-weight: bold;">
+                    <span>EST. COST PER SERVING:</span>
+                    <span style="color: #2e7d32;">$1.92</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; border-top: 1px dashed #141312; padding-top: 8px; font-size: 18px; font-weight: bold;">
+                    <span>TOTAL LEDGER COST:</span>
+                    <span id="total-cost-display" style="color: #141312;">$7.68</span>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="font-family: monospace; text-transform: uppercase;">Ingredient Breakdown</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px; font-family: monospace;">
+            <thead>
+                <tr style="background-color: #141312; color: #FFF; text-align: left;">
+                    <th style="padding: 10px;">Ingredient</th>
+                    <th style="padding: 10px;">Base Qty (4 Servings)</th>
+                    <th style="padding: 10px;">Scaled Qty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="border-bottom: 1px solid #E0E0E0;">
+                    <td style="padding: 10px; font-weight: bold;">Bone-in, Skin-on Chicken Thighs</td>
+                    <td style="padding: 10px;">4 count (~2 lbs)</td>
+                    <td style="padding: 10px;" class="ingredient-qty" data-base="1">4 count</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #E0E0E0;">
+                    <td style="padding: 10px; font-weight: bold;">Lemon (Zested & Juiced)</td>
+                    <td style="padding: 10px;">1 large</td>
+                    <td style="padding: 10px;" class="ingredient-qty" data-base="0.25">1 large</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #E0E0E0;">
+                    <td style="padding: 10px; font-weight: bold;">Lemon Pepper Seasoning Block</td>
+                    <td style="padding: 10px;">1.5 tbsp</td>
+                    <td style="padding: 10px;" class="ingredient-qty" data-base="0.375">1.5 tbsp</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #E0E0E0;">
+                    <td style="padding: 10px; font-weight: bold;">Olive Oil / Butter Melt</td>
+                    <td style="padding: 10px;">1 tbsp</td>
+                    <td style="padding: 10px;" class="ingredient-qty" data-base="0.25">1 tbsp</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 style="font-family: monospace; text-transform: uppercase;">Execution Protocol</h3>
+        <ol style="line-height: 1.6; padding-left: 20px;">
+            <li style="margin-bottom: 10px;">Pat chicken thighs completely dry with a paper towel (essential for ultra-crispy skin).</li>
+            <li style="margin-bottom: 10px;">Season both sides generously with your lemon pepper seasoning metric.</li>
+            <li style="margin-bottom: 10px;">Place skin-side down in a cold skillet, then turn the heat up to medium-high. Let the fat render out slowly for 12-15 minutes until gold-plated and crisp.</li>
+            <li style="margin-bottom: 10px;">Flip over, add the fresh lemon juice directly into the pan grease, and cook for another 5-8 minutes until internal temps hit 165°F.</li>
+        </ol>
+    </main>
+
+    <script>
+        const servingSelect = document.getElementById('serving-select');
+        const totalCostDisplay = document.getElementById('total-cost-display');
+        const ingredientElements = document.querySelectorAll('.ingredient-qty');
+
+        const costPerServing = 1.92;
+
+        servingSelect.addEventListener('change', (e) => {
+            const currentServings = parseInt(e.target.value);
+            
+            // 1. Calculate and update overall money ledger
+            const totalCost = (currentServings * costPerServing).toFixed(2);
+            totalCostDisplay.textContent = `$${totalCost}`;
+
+            // 2. Scale ingredients based on selected numbers
+            ingredientElements.forEach(element => {
+                const baseValue = parseFloat(element.getAttribute('data-base'));
+                const calculatedQty = baseValue * currentServings;
+                
+                // Formatting units cleanly depending on item types
+                if (element.parentNode.innerText.includes('count')) {
+                    element.textContent = `${calculatedQty} count`;
+                } else if (element.parentNode.innerText.includes('large')) {
+                    element.textContent = `${calculatedQty === 1 ? '1 large' : calculatedQty + ' large'}`;
+                } else if (element.parentNode.innerText.includes('tbsp')) {
+                    element.textContent = `${calculatedQty} tbsp`;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
