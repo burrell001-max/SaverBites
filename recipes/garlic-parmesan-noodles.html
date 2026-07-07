@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garlic Parmesan Butter Noodles Matrix — SaverBites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">SAVER<span class="logo-accent">BITES</span></a>
+            <nav class="main-nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Recipes under $10</a>
+                <a href="#" class="nav-link">Meal Prep Matrix</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section">
+        <article class="recipe-container">
+            <header class="recipe-post-header">
+                <span class="card-category font-mono">PASTA / ONE-POT</span>
+                <h1>Garlic Parmesan Butter Noodles Matrix</h1>
+                <p class="recipe-intro">A meticulous, high-yield comfort dish broken down to the exact unit value. Rich, savory, and engineered for maximum cost-to-flavor efficiency.</p>
+            </header>
+
+            <div class="recipe-blueprint-grid">
+                <!-- Ingredients Ledger Panel -->
+                <div class="ledger-panel">
+                    <div class="ledger-header">
+                        <h2 class="font-mono">INGREDIENT UNIT LEDGER</h2>
+                        <div class="serving-control font-mono">
+                            <span>SERVINGS:</span>
+                            <button class="serve-btn" id="minus-btn">-</button>
+                            <span id="serving-multiplier" class="bold">4</span>
+                            <button class="serve-btn" id="plus-btn">+</button>
+                        </div>
+                    </div>
+
+                    <div class="ledger-table font-mono">
+                        <div class="ledger-row table-head">
+                            <span>INGREDIENT ITEM</span>
+                            <span>QTY</span>
+                            <span>UNIT COST</span>
+                        </div>
+                        
+                        <div class="ledger-row ingredient-item" data-base-qty="16" data-unit-price="0.08">
+                            <span>Egg Noodles (Standard Pack)</span>
+                            <span class="item-qty">16 oz</span>
+                            <span class="item-cost">$1.28</span>
+                        </div>
+                        <div class="ledger-row ingredient-item" data-base-qty="4" data-unit-price="0.22">
+                            <span>Unsalted Butter (Sweet Cream)</span>
+                            <span class="item-qty">4 tbsp</span>
+                            <span class="item-cost">$0.88</span>
+                        </div>
+                        <div class="ledger-row ingredient-item" data-base-qty="4" data-unit-price="0.10">
+                            <span>Fresh Garlic Cloves (Minced)</span>
+                            <span class="item-qty">4 cloves</span>
+                            <span class="item-cost">$0.40</span>
+                        </div>
+                        <div class="ledger-row ingredient-item" data-base-qty="0.5" data-unit-price="1.60">
+                            <span>Grated Parmesan Cheese</span>
+                            <span class="item-qty">0.5 cup</span>
+                            <span class="item-cost">$0.80</span>
+                        </div>
+
+                        <div class="ledger-total-row">
+                            <span>ESTIMATED TOTAL MATRIX:</span>
+                            <span id="total-price-display">$3.36</span>
+                        </div>
+                        <div class="ledger-total-row cost-per-serving">
+                            <span>COST PER SERVING:</span>
+                            <span id="per-serving-display" class="color-yellow">$0.84</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Preparation Protocol -->
+                <div class="protocol-panel">
+                    <h2 class="font-display">Preparation Protocol</h2>
+                    <ol class="protocol-list">
+                        <li><strong>Boil Pasta:</strong> Bring a large pot of salted water to a rolling boil. Add egg noodles and cook for 6-8 minutes until al dente. Drain, reserving 1/2 cup of starchy pasta water.</li>
+                        <li><strong>Aromatic Base:</strong> Melt butter in a large skillet over medium-low heat. Add minced garlic, stirring continuously for 1-2 minutes until beautifully fragrant without browning.</li>
+                        <li><strong>Emulsify & Finish:</strong> Toss noodles directly into the garlic butter skillet. Remove from heat source. Shower with grated parmesan cheese and toss aggressively, adding dashes of pasta water as needed to form a glossy sauce coat.</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Micro-Calculator Logic -->
+    <script>
+        const baseServings = 4;
+        let currentServings = 4;
+
+        const minusBtn = document.getElementById('minus-btn');
+        const plusBtn = document.getElementById('plus-btn');
+        const servingDisplay = document.getElementById('serving-multiplier');
+        const totalDisplay = document.getElementById('total-price-display');
+        const perServingDisplay = document.getElementById('per-serving-display');
+        const rows = document.querySelectorAll('.ingredient-item');
+
+        function updateLedger() {
+            let newTotal = 0;
+            const factor = currentServings / baseServings;
+            
+            servingDisplay.textContent = currentServings;
+
+            rows.forEach(row => {
+                const baseQty = parseFloat(row.getAttribute('data-base-qty'));
+                const unitPrice = parseFloat(row.getAttribute('data-unit-price'));
+                
+                const calculatedQty = (baseQty * factor).toFixed(1);
+                const calculatedCost = (baseQty * factor * unitPrice).toFixed(2);
+                newTotal += parseFloat(calculatedCost);
+
+                // Update text strings
+                const qtySpan = row.querySelector('.item-qty');
+                const costSpan = row.querySelector('.item-cost');
+                
+                // Keep clean labels (cloves/oz/cups)
+                if(qtySpan.textContent.includes('oz')) qtySpan.textContent = `${calculatedQty} oz`;
+                if(qtySpan.textContent.includes('tbsp')) qtySpan.textContent = `${calculatedQty} tbsp`;
+                if(qtySpan.textContent.includes('cloves')) qtySpan.textContent = `${Math.round(calculatedQty)} cloves`;
+                if(qtySpan.textContent.includes('cup')) qtySpan.textContent = `${calculatedQty} cup`;
+                
+                costSpan.textContent = `$${calculatedCost}`;
+            });
+
+            totalDisplay.textContent = `$${newTotal.toFixed(2)}`;
+            perServingDisplay.textContent = `$${(newTotal / currentServings).toFixed(2)}`;
+        }
+
+        plusBtn.addEventListener('click', () => { currentServings += 2; updateLedger(); });
+        minusBtn.addEventListener('click', () => { if(currentServings > 2) { currentServings -= 2; updateLedger(); } });
+    </script>
+</body>
+</html>
