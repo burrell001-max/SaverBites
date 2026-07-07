@@ -130,11 +130,15 @@
         const recipeCards = document.querySelectorAll('.recipe-card');
 
         filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const filterValue = button.getAttribute('data-filter');
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const filterValue = button.getAttribute('data-filter').trim();
 
                 recipeCards.forEach(card => {
-                    const cardCategories = card.getAttribute('data-categories').split(' ');
+                    const rawCategories = card.getAttribute('data-categories');
+                    if (!rawCategories) return; // Skips any broken cards without tags
+                    
+                    const cardCategories = rawCategories.trim().split(/\s+/);
                     
                     if (filterValue === 'all' || cardCategories.includes(filterValue)) {
                         card.style.display = 'block';
