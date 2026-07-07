@@ -134,13 +134,14 @@ body {
         font-size: 0.7rem;
     }
 }/* Recipe Page Extensions */
-.recipe-container { max-width: 900px; margin: 0 auto; }
-.recipe-post-header { margin-bottom: 40px; text-align: center; }
-.recipe-post-header h1 { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); margin: 12px 0; }
-.recipe-intro { color: var(--text-muted); font-size: 1.1rem; }
-
-.recipe-blueprint-grid { display: grid; grid-template-columns: 1fr; gap: 40px; margin-top: 40px; }
-@media(min-width: 768px) { .recipe-blueprint-grid { grid-template-columns: 1.1fr 0.9fr; } }
+/* Button Clean Up for Filters */
+button.category-item {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0;
+} } }
 
 /* Ledger Tables */
 .ledger-panel { background: white; border: 1px solid var(--border-gray); border-radius: 6px; padding: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.02); }
