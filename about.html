@@ -3,22 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - SaverBites</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About — SaverBites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- Copy your existing navigation header here -->
 
-    <main class="section" style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
-        <h1>About SaverBites</h1>
-        <p style="font-size: 1.2rem; line-height: 1.6; margin-top: 20px;">
-            Welcome to SaverBites, where budget meets culinary precision. Our mission is simple: to provide thoroughly audited, cost-effective recipe structures that empower everyday home cooks to maximize their grocery savings without sacrificing flavor.
-        </p>
-        <p style="line-height: 1.6;">
-            Unlike standard recipe sites, every layout here is built around calculated transparency. We map out ingredient receipts, servings, and optimal meal structures down to the exact penny. 
-        </p>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">SAVER<span class="logo-accent">BITES</span></a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="pasta.html" class="nav-link">Pasta Dishes</a>
+                <a href="onepot.html" class="nav-link">One Pot Meals</a>
+                <a href="vegetarian.html" class="nav-link">Vegetarian</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section container" style="max-width: 720px;">
+            <span class="hero-badge font-mono">THE MISSION BEHIND THE MATRIX</span>
+            <h1 class="section-heading" style="margin-top: 10px;">About SaverBites</h1>
+
+            <p style="color: #444; line-height: 1.7; margin-top: 20px;">Grocery prices don't hold still, and neither do we. SaverBites exists because "budget recipe" articles online are usually guesswork — a vague nod to "cheap ingredients" with no real math behind it. We wanted receipts, not vibes.</p>
+
+            <p style="color: #444; line-height: 1.7; margin-top: 16px;">Every recipe on this site is priced out ingredient by ingredient, using current average grocery costs, broken down to the exact serving. We call it the audit: total recipe yield, cost per serving, and real active cooking time — no rounding up, no hidden pantry staples left out of the math.</p>
+
+            <p style="color: #444; line-height: 1.7; margin-top: 16px;">We're not trying to sell you a meal kit or a subscription box. We're trying to prove that a well-built pot of lentils can out-cook a $14 delivery order, and show you exactly how the numbers get there.</p>
+
+            <div class="receipt-widget" style="margin-top: 40px; max-width: 420px;">
+                <div class="receipt-title font-mono">SAVERBITES MISSION TICKET</div>
+                <div class="receipt-divider"></div>
+                <div class="receipt-line font-mono"><span>01/ REAL GROCERY PRICES</span><span>✓</span></div>
+                <div class="receipt-line font-mono"><span>02/ PER-SERVING MATH</span><span>✓</span></div>
+                <div class="receipt-line font-mono"><span>03/ NO SPONSORED CUTS</span><span>✓</span></div>
+                <div class="receipt-divider"></div>
+                <div class="barcode">|||| |||||| ||| ||||| ||</div>
+            </div>
+        </section>
     </main>
 
-    <!-- Copy your existing footer here -->
+    <footer class="footer" style="background-color: #141312; color: #fff; padding: 40px 20px; text-align: center;">
+        <p>&copy; 2026 SaverBites. All rights reserved.</p>
+        <div style="margin-top: 15px; font-size: 0.9rem;">
+            <a href="about.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">About</a> |
+            <a href="blog.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Blog</a> |
+            <a href="contact.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Contact</a> |
+            <a href="privacy.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
+            <a href="terms.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+        </div>
+    </footer>
+
 </body>
 </html>
