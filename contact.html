@@ -3,28 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - SaverBites</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact — SaverBites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- Copy your existing navigation header here -->
 
-    <main class="section" style="max-width: 600px; margin: 0 auto; padding: 40px 20px;">
-        <h1>Contact SaverBites</h1>
-        <p>Have questions about our recipe cost audits or budget breakdowns? Drop us a message below!</p>
-        
-        <!-- Since it's a static GitHub site, you can use a free service like Formspree or just a mailto link -->
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
-            <label>Your Email:
-                <input type="email" name="email" required style="width: 100%; padding: 10px; margin-top: 5px;">
-            </label>
-            <label>Message:
-                <textarea name="message" required style="width: 100%; padding: 10px; height: 150px; margin-top: 5px;"></textarea>
-            </label>
-            <button type="submit" style="background-color: #FFC820; color: #141312; padding: 10px; border: none; font-weight: bold; cursor: pointer;">Send Message</button>
-        </form>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">SAVER<span class="logo-accent">BITES</span></a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="pasta.html" class="nav-link">Pasta Dishes</a>
+                <a href="onepot.html" class="nav-link">One Pot Meals</a>
+                <a href="vegetarian.html" class="nav-link">Vegetarian</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section container" style="max-width: 600px;">
+            <span class="hero-badge font-mono">GOT A CORRECTION OR A REQUEST?</span>
+            <h1 class="section-heading" style="margin-top: 10px;">Contact Us</h1>
+            <p style="color: #555; margin-bottom: 30px;">Spotted a pricing error, want a recipe audited, or just want to say hi? Send us a note below.</p>
+
+            <form action="mailto:hello@saverbites.example" method="post" enctype="text/plain" style="display: flex; flex-direction: column; gap: 16px;">
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <label for="name" class="font-mono" style="font-size: 0.85rem; color: #141312;">NAME</label>
+                    <input type="text" id="name" name="name" required style="padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: 'Inter', sans-serif;">
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <label for="email" class="font-mono" style="font-size: 0.85rem; color: #141312;">EMAIL</label>
+                    <input type="email" id="email" name="email" required style="padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: 'Inter', sans-serif;">
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <label for="message" class="font-mono" style="font-size: 0.85rem; color: #141312;">MESSAGE</label>
+                    <textarea id="message" name="message" rows="6" required style="padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: 'Inter', sans-serif; resize: vertical;"></textarea>
+                </div>
+                <button type="submit" style="background-color: #FFC820; color: #141312; border: none; padding: 14px 20px; font-weight: bold; border-radius: 4px; cursor: pointer; font-family: 'IBM Plex Mono', monospace;">SEND MESSAGE →</button>
+            </form>
+
+            <p style="color: #888; font-size: 0.85rem; margin-top: 20px;">You can also reach us directly at <a href="mailto:hello@saverbites.example" style="color: #141312;">hello@saverbites.example</a>.</p>
+        </section>
     </main>
 
-    <!-- Copy your existing footer here -->
+    <footer class="footer" style="background-color: #141312; color: #fff; padding: 40px 20px; text-align: center;">
+        <p>&copy; 2026 SaverBites. All rights reserved.</p>
+        <div style="margin-top: 15px; font-size: 0.9rem;">
+            <a href="about.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">About</a> |
+            <a href="blog.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Blog</a> |
+            <a href="contact.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Contact</a> |
+            <a href="privacy.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
+            <a href="terms.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+        </div>
+    </footer>
+
 </body>
 </html>
