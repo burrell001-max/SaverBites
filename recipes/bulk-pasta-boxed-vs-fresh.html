@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Pasta Audits: Gram-for-Gram Cost Analysis of Boxed vs. Fresh — SaverBites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">SAVER<span class="logo-accent">BITES</span></a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../pasta.html" class="nav-link">Pasta Dishes</a>
+                <a href="../onepot.html" class="nav-link">One Pot Meals</a>
+                <a href="../vegetarian.html" class="nav-link">Vegetarian</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section">
+        <article class="recipe-container">
+            <header class="recipe-post-header">
+                <span class="card-category font-mono">BULK / METRICS</span>
+                <h1>Bulk Pasta Audits: Gram-for-Gram Cost Analysis of Boxed vs. Fresh</h1>
+                <p class="recipe-intro">Is homemade pasta actually cheaper, or are you paying with your time? We weigh bulk semolina flour against standard boxed pasta on a true cost-per-ounce basis.</p>
+            </header>
+
+            <div class="recipe-blueprint-grid">
+                <!-- Ingredients Ledger Panel -->
+                <div class="ledger-panel">
+                    <div class="ledger-header">
+                        <h2 class="font-mono">INGREDIENT UNIT LEDGER</h2>
+                        <div class="serving-control font-mono">
+                            <span>SERVINGS:</span>
+                            <button class="serve-btn" id="minus-btn">-</button>
+                            <span id="serving-multiplier" class="bold">4</span>
+                            <button class="serve-btn" id="plus-btn">+</button>
+                        </div>
+                    </div>
+
+                    <div class="ledger-table font-mono">
+                        <div class="ledger-row table-head">
+                            <span>INGREDIENT ITEM</span>
+                            <span>QTY</span>
+                            <span>UNIT COST</span>
+                        </div>
+
+                        <div class="ledger-row ingredient-item" data-base-qty="10" data-unit-price="0.06" data-unit="oz" data-whole="false">
+                            <span>Semolina Flour (Bulk Bag)</span>
+                            <span class="item-qty">10 oz</span>
+                            <span class="item-cost">$0.60</span>
+                        </div>
+                        <div class="ledger-row ingredient-item" data-base-qty="3" data-unit-price="0.25" data-unit="large" data-whole="true">
+                            <span>Large Eggs</span>
+                            <span class="item-qty">3 large</span>
+                            <span class="item-cost">$0.75</span>
+                        </div>
+                        <div class="ledger-row ingredient-item" data-base-qty="1" data-unit-price="0.18" data-unit="tbsp" data-whole="false">
+                            <span>Olive Oil</span>
+                            <span class="item-qty">1 tbsp</span>
+                            <span class="item-cost">$0.18</span>
+                        </div>
+                        <div class="ledger-row ingredient-item" data-base-qty="1" data-unit-price="0.02" data-unit="tsp" data-whole="false">
+                            <span>Salt</span>
+                            <span class="item-qty">1 tsp</span>
+                            <span class="item-cost">$0.02</span>
+                        </div>
+
+                        <div class="ledger-total-row">
+                            <span>ESTIMATED TOTAL MATRIX:</span>
+                            <span id="total-price-display">$1.55</span>
+                        </div>
+                        <div class="ledger-total-row cost-per-serving">
+                            <span>COST PER SERVING:</span>
+                            <span id="per-serving-display" class="color-yellow">$0.39</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Preparation Protocol -->
+                <div class="protocol-panel">
+                    <h2 class="font-display">Preparation Protocol</h2>
+                    <ol class="protocol-list">
+                        <li><strong>Mound and Well:</strong> Pour semolina onto a work surface and form a well in the center. Crack eggs and oil into the well.</li>
+                        <li><strong>Knead:</strong> Gradually incorporate flour into the eggs with a fork, then knead by hand for 8-10 minutes until smooth and elastic.</li>
+                        <li><strong>Rest:</strong> Wrap dough in plastic and rest at room temperature to relax the gluten.</li>
+                        <li><strong>Roll and Cut:</strong> Roll dough thin with a pasta machine or rolling pin, then cut into the shape of your choice.</li>
+                        <li><strong>Cook:</strong> Boil fresh pasta in salted water for just 2-3 minutes, since fresh sheets cook far faster than boxed dry pasta.</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer" style="background-color: #141312; color: #fff; padding: 40px 20px; text-align: center;">
+        <p>&copy; 2026 SaverBites. All rights reserved.</p>
+        <div style="margin-top: 15px; font-size: 0.9rem;">
+            <a href="../about.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">About</a> |
+            <a href="../blog.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Blog</a> |
+            <a href="../contact.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Contact</a> |
+            <a href="../privacy.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
+            <a href="../terms.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+        </div>
+    </footer>
+
+    <!-- Micro-Calculator Logic -->
+    <script>
+        const baseServings = 4;
+        let currentServings = 4;
+
+        const minusBtn = document.getElementById('minus-btn');
+        const plusBtn = document.getElementById('plus-btn');
+        const servingDisplay = document.getElementById('serving-multiplier');
+        const totalDisplay = document.getElementById('total-price-display');
+        const perServingDisplay = document.getElementById('per-serving-display');
+        const rows = document.querySelectorAll('.ingredient-item');
+
+        function formatQty(qty, isWhole) {
+            if (isWhole) return Math.round(qty).toString();
+            const rounded = Math.round(qty * 100) / 100;
+            // show 1 decimal unless it needs 2 for accuracy
+            const oneDecimal = Math.round(qty * 10) / 10;
+            return (Math.abs(oneDecimal - rounded) < 0.001) ? oneDecimal.toString() : rounded.toString();
+        }
+
+        function updateLedger() {
+            let newTotal = 0;
+            const factor = currentServings / baseServings;
+
+            servingDisplay.textContent = currentServings;
+
+            rows.forEach(row => {
+                const baseQty = parseFloat(row.getAttribute('data-base-qty'));
+                const unitPrice = parseFloat(row.getAttribute('data-unit-price'));
+                const unit = row.getAttribute('data-unit');
+                const isWhole = row.getAttribute('data-whole') === 'true';
+
+                const calculatedQty = baseQty * factor;
+                const calculatedCost = calculatedQty * unitPrice;
+                newTotal += calculatedCost;
+
+                const qtySpan = row.querySelector('.item-qty');
+                const costSpan = row.querySelector('.item-cost');
+
+                qtySpan.textContent = `${formatQty(calculatedQty, isWhole)} ${unit}`;
+                costSpan.textContent = `$${calculatedCost.toFixed(2)}`;
+            });
+
+            totalDisplay.textContent = `$${newTotal.toFixed(2)}`;
+            perServingDisplay.textContent = `$${(newTotal / currentServings).toFixed(2)}`;
+        }
+
+        plusBtn.addEventListener('click', () => { currentServings += 1; updateLedger(); });
+        minusBtn.addEventListener('click', () => { if (currentServings > 1) { currentServings -= 1; updateLedger(); } });
+    </script>
+</body>
+</html>
