@@ -1,149 +1,204 @@
-<!-- 2. MAIN CONTENT AREA (PASTA DISHES CATEGORY) -->
-<main class="blog-wrapper" id="pasta-category">
-    <h1 style="font-size: 2.5rem; color: #141312; margin-top: 20px;">Pasta Matrix Audits</h1>
-    <p style="color: #666; margin-top: -10px; margin-bottom: 30px;">Maximum carb efficiency. Line-item cost breakdowns on noodles, emulsified sauces, and optimized proteins.</p>
-    
-    <div class="blog-grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta Dishes — SaverBites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
 
-        <!-- Pasta 1 -->
-        <article class="blog-card">
-            <div class="blog-img-container">
-                <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600" alt="Creamy carbonara pasta">
-            </div>
-            <div class="blog-body">
-                <span class="blog-category">Pasta / Protein</span>
-                <h3 class="blog-title">The $0.62 Carbonara: Hard Cheese vs. Legit Guanciale Pricing</h3>
-                <p class="blog-desc">
-                    True Roman carbonara relies on emulsification, not expensive heavy cream. We audit the exact price metrics of using authentic imported pork cheek versus standard supermarket bacon, proving you can unlock premium restaurant depth for less than a dollar per serving.
-                </p>
-            </div>
-        </article>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">SAVER<span class="logo-accent">BITES</span></a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="pasta.html" class="nav-link active">Pasta Dishes</a>
+                <a href="onepot.html" class="nav-link">One Pot Meals</a>
+                <a href="vegetarian.html" class="nav-link">Vegetarian</a>
+            </nav>
+        </div>
+    </header>
 
-        <!-- Pasta 2 -->
-        <article class="blog-card">
-            <div class="blog-img-container">
-                <img src="https://images.unsplash.com/photo-1551462147-ff29053bfc14?w=600" alt="Raw boxed pasta vs fresh shapes">
-            </div>
-            <div class="blog-body">
-                <span class="blog-category">Bulk / Metrics</span>
-                <h3 class="blog-title">Bulk Pasta Audits: Gram-for-Gram Cost Analysis of Boxed vs. Fresh</h3>
-                <p class="blog-desc">
-                    Is making your own pasta actually cheaper, or are you paying with your valuable time? This raw data breakdown calculates the true cost per ounce of bulk semolina flour against standard grocery store white-label boxes to find the true winner.
-                </p>
-            </div>
-        </article>
+    <main>
+        <section class="section container">
+            <span class="hero-badge font-mono">MAXIMUM CARB EFFICIENCY</span>
+            <h1 class="section-heading" style="margin-top: 10px;">Pasta Matrix Audits</h1>
+            <p style="max-width: 640px; color: #555;">Maximum carb efficiency. Line-item cost breakdowns on noodles, emulsified sauces, and optimized proteins.</p>
 
-        <!-- Pasta 3 -->
-        <article class="blog-card">
-            <div class="blog-img-container">
-                <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=600" alt="Gnocchi in brown butter sage sauce">
-            </div>
-            <div class="blog-body">
-                <span class="blog-category">Pantry / Flavor</span>
-                <h3 class="blog-title">Brown Butter & Sage Matrix: High-End Flavors on a Pennies Budget</h3>
-                <p class="blog-desc">
-                    When standard tomato sauce feels boring, browning your butter triggers the Maillard reaction to create a complex, nutty flavor profile. Learn how five simple fresh sage leaves and a block of store-brand butter can transform basic noodles into fine dining.
-                </p>
-            </div>
-        </article>
+            <div class="recipe-grid" style="margin-top: 30px;">
 
-        <!-- Pasta 4 -->
-        <article class="blog-card">
-            <div class="blog-img-container">
-                <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=600" alt="Cacio e pepe spaghetti close up">
-            </div>
-            <div class="blog-body">
-                <span class="blog-category">Technique / Value</span>
-                <h3 class="blog-title">The Cacio e Pepe Blueprint: Mastering Emulsification to Save on Sauce</h3>
-                <p class="blog-desc">
-                    Stop wasting cash on expensive pre-made jarred Alfredo. We break down the exact physics of using starchy pasta water and finely grated Pecorino Romano to form a creamy, luxury sauce coat without using an ounce of actual cream.
-                </p>
-            </div>
-        </article>
+                <div class="recipe-card">
+                    <div class="card-img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600" alt="The $0.62 Carbonara: Hard Cheese vs. Legit Guanciale Pricing">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">PASTA / PROTEIN</span>
+                        <h3><a href="./recipes/carbonara-hard-cheese-guanciale.html" class="card-title-link">The $0.62 Carbonara: Hard Cheese vs. Legit Guanciale Pricing</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.78</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$3.10</span></div>
+                        </div>
+                        <a href="./recipes/carbonara-hard-cheese-guanciale.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
 
-        <!-- Pasta 5 -->
-        <article class="blog-card">
-            <div class="blog-img-container">
-                <img src="https://images.unsplash.com/photo-1621996346565-e3bb6464593e?w=600" alt="Garlic and oil pasta pan">
-            </div>
-            <div class="blog-body">
-                <span class="blog-category">Staples / Speed</span>
-                <h3 class="blog-title">Agilio e Olio: Maximizing Cheap Pantry Staples for Maximum Garlic Flavor</h3>
-                <p class="blog-desc">
-                    When the fridge is completely empty, Aglio e Olio saves your budget. By slowly infusing raw garlic slices into basic olive oil and finishing with a pinch of red pepper flakes, you create an aromatic profile that costs pennies.
-                </p>
-            </div>
-        </article>
+                <div class="recipe-card">
+                    <div class="card-img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1551462147-ff29053bfc14?w=600" alt="Bulk Pasta Audits: Gram-for-Gram Cost Analysis of Boxed vs. Fresh">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">BULK / METRICS</span>
+                        <h3><a href="./recipes/bulk-pasta-boxed-vs-fresh.html" class="card-title-link">Bulk Pasta Audits: Gram-for-Gram Cost Analysis of Boxed vs. Fresh</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.39</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$1.55</span></div>
+                        </div>
+                        <a href="./recipes/bulk-pasta-boxed-vs-fresh.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
 
-        <!-- Pasta 6 -->
-        <article class="blog-card">
-            <div class="blog-img-container">
-                <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600" alt="Canned tomatoes in metal tin">
-            </div>
-            <div class="blog-body">
-                <span class="blog-category">Sauce / Sourcing</span>
-                <h3 class="blog-title">The Red Sauce Audit: Why Whole Peeled Tomatoes Beat Jarred Marinara EVERY Time</h3>
-                <p class="blog-desc">
-                    Sugar-filled jarred spaghetti sauces are a major budget leak. Our matrix proves that buying a $1.20 can of whole peeled plum tomatoes and simmering it down with a halved yellow onion yields double the volume for half the market cost.
-                </p>
-            </div>
-        </article>
+                <div class="recipe-card">
+                    <div class="card-img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=600" alt="Brown Butter & Sage Matrix: High-End Flavors on a Pennies Budget">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">PANTRY / FLAVOR</span>
+                        <h3><a href="./recipes/brown-butter-sage-matrix.html" class="card-title-link">Brown Butter & Sage Matrix: High-End Flavors on a Pennies Budget</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.98</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$3.92</span></div>
+                        </div>
+                        <a href="./recipes/brown-butter-sage-matrix.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
 
-        <!-- Pasta 7 -->
-        <article class="blog-card">
-            <div class="blog-img-container">
-                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600" alt="Cold rotini pasta salad with veggies">
-            </div>
-            <div class="blog-body">
-                <span class="blog-category">Meal Prep / Cold</span>
-                <h3 class="blog-title">Budget Pasta Salad Matrix: Modular Cold Dishes for Hot Summer Weeks</h3>
-                <p class="blog-desc">
-                    Running an oven in mid-July drives up your utility cooling bills. Discover our modular formula for high-volume cold rotini salads utilizing seasonal budget greens, canned olives, and simple homemade vinegar dressings.
-                </p>
-            </div>
-        </article>
+                <div class="recipe-card">
+                    <div class="card-img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=600" alt="The Cacio e Pepe Blueprint: Mastering Emulsification to Save on Sauce">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">TECHNIQUE / VALUE</span>
+                        <h3><a href="./recipes/cacio-e-pepe-blueprint.html" class="card-title-link">The Cacio e Pepe Blueprint: Mastering Emulsification to Save on Sauce</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.62</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$2.50</span></div>
+                        </div>
+                        <a href="./recipes/cacio-e-pepe-blueprint.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
 
-        <!-- Pasta 8 -->
-        <article class="blog-card">
-            <div class="blog-img-container">
-                <img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=600" alt="Rich meat sauce bolognese spaghetti">
-            </div>
-            <div class="blog-body">
-                <span class="blog-category">Optimization / Meat</span>
-                <h3 class="blog-title">Stretching the Protein: Optimizing 1/2 Pound of Beef Across a Gallon of Bolognese</h3>
-                <p class="blog-desc">
-                    You don't need pounds of meat to build a satisfying meat sauce. By finely mincing a classic mirepoix (carrots, onions, and celery) to match the texture of ground beef, you triple the sauce volume while keeping a high-end texture.
-                </p>
-            </div>
-        </article>
+                <div class="recipe-card">
+                    <div class="card-img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1621996346565-e3bb6464593e?w=600" alt="Aglio e Olio: Maximizing Cheap Pantry Staples for Maximum Garlic Flavor">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">STAPLES / SPEED</span>
+                        <h3><a href="./recipes/aglio-e-olio-pantry-staples.html" class="card-title-link">Aglio e Olio: Maximizing Cheap Pantry Staples for Maximum Garlic Flavor</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.67</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$2.66</span></div>
+                        </div>
+                        <a href="./recipes/aglio-e-olio-pantry-staples.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
 
-        <!-- Pasta 9 -->
-        <article class="blog-card">
-            <div class="blog-img-container">
-                <img src="https://images.unsplash.com/photo-1595187365443-fce04404291e?w=600" alt="Fresh green basil leaves">
-            </div>
-            <div class="blog-body">
-                <span class="blog-category">Waste / Greens</span>
-                <h3 class="blog-title">The Zero-Waste Pesto: Swapping Pine Nuts for Sunflower Seeds and Scraps</h3>
-                <p class="blog-desc">
-                    Traditional pine nuts cost an absolute fortune per ounce. This recipe swap swaps them out for cheap toasted sunflower seeds, and blends wilted spinach or carrot tops directly with basil to create a vibrant green sauce for a fraction of the price.
-                </p>
-            </div>
-        </article>
+                <div class="recipe-card">
+                    <div class="card-img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600" alt="The Red Sauce Audit: Why Whole Peeled Tomatoes Beat Jarred Marinara Every Time">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">SAUCE / SOURCING</span>
+                        <h3><a href="./recipes/red-sauce-audit-whole-tomatoes.html" class="card-title-link">The Red Sauce Audit: Why Whole Peeled Tomatoes Beat Jarred Marinara Every Time</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.72</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$2.87</span></div>
+                        </div>
+                        <a href="./recipes/red-sauce-audit-whole-tomatoes.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
 
-        <!-- Pasta 10 -->
-        <article class="blog-card">
-            <div class="blog-img-container">
-                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=600" alt="Baked ziti pasta tray with bubbling cheese">
-            </div>
-            <div class="blog-body">
-                <span class="blog-category">Baking / Dairy</span>
-                <h3 class="blog-title">Baked Ziti Efficiency: How to Layer Cheaper Ricotta Substitutes Without Losing Creaminess</h3>
-                <p class="blog-desc">
-                    Ricotta cheese can easily double the price of a standard pasta bake. Learn our favorite kitchen thrift hack: blending cheap cottage cheese with a single egg yolk to perfectly replicate the consistency and moisture barrier of authentic ricotta.
-                </p>
-            </div>
-        </article>
+                <div class="recipe-card">
+                    <div class="card-img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600" alt="Budget Pasta Salad Matrix: Modular Cold Dishes for Hot Summer Weeks">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">MEAL PREP / COLD</span>
+                        <h3><a href="./recipes/budget-pasta-salad-matrix.html" class="card-title-link">Budget Pasta Salad Matrix: Modular Cold Dishes for Hot Summer Weeks</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.84</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$5.06</span></div>
+                        </div>
+                        <a href="./recipes/budget-pasta-salad-matrix.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
 
-    </div> <!-- Closes .blog-grid -->
-</main>
+                <div class="recipe-card">
+                    <div class="card-img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=600" alt="Stretching the Protein: Optimizing 1/2 Pound of Beef Across a Gallon of Bolognese">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">OPTIMIZATION / MEAT</span>
+                        <h3><a href="./recipes/stretching-the-protein-bolognese.html" class="card-title-link">Stretching the Protein: Optimizing 1/2 Pound of Beef Across a Gallon of Bolognese</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$1.01</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$6.03</span></div>
+                        </div>
+                        <a href="./recipes/stretching-the-protein-bolognese.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="card-img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1595187365443-fce04404291e?w=600" alt="The Zero-Waste Pesto: Swapping Pine Nuts for Sunflower Seeds and Scraps">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">WASTE / GREENS</span>
+                        <h3><a href="./recipes/zero-waste-pesto.html" class="card-title-link">The Zero-Waste Pesto: Swapping Pine Nuts for Sunflower Seeds and Scraps</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.91</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$3.65</span></div>
+                        </div>
+                        <a href="./recipes/zero-waste-pesto.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="card-img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=600" alt="Baked Ziti Efficiency: How to Layer Cheaper Ricotta Substitutes Without Losing Creaminess">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">BAKING / DAIRY</span>
+                        <h3><a href="./recipes/baked-ziti-efficiency.html" class="card-title-link">Baked Ziti Efficiency: How to Layer Cheaper Ricotta Substitutes Without Losing Creaminess</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.88</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$5.28</span></div>
+                        </div>
+                        <a href="./recipes/baked-ziti-efficiency.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="background-color: #141312; color: #fff; padding: 40px 20px; text-align: center;">
+        <p>&copy; 2026 SaverBites. All rights reserved.</p>
+        <div style="margin-top: 15px; font-size: 0.9rem;">
+            <a href="about.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">About</a> |
+            <a href="blog.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Blog</a> |
+            <a href="contact.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Contact</a> |
+            <a href="privacy.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
+            <a href="terms.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+        </div>
+    </footer>
+
+    <style>
+        .card-title-link { color: inherit; text-decoration: none; }
+        .card-link { display: block; margin-top: 15px; color: #FFC820; font-weight: bold; text-decoration: none; }
+    </style>
+</body>
+</html>
