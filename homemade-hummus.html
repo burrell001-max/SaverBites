@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homemade Hummus: Undercutting the Store-Bought Tub by 65% — SaverBites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">SAVER<span class="logo-accent">BITES</span></a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../pasta.html" class="nav-link">Pasta Dishes</a>
+                <a href="../onepot.html" class="nav-link">One Pot Meals</a>
+                <a href="../vegetarian.html" class="nav-link">Vegetarian</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section">
+        <article class="recipe-container">
+            <header class="recipe-post-header">
+                <span class="card-category font-mono">DIPS / BULK</span>
+                <h1>Homemade Hummus: Undercutting the Store-Bought Tub by 65%</h1>
+                <p class="recipe-intro">A can of chickpeas, a spoon of tahini, and garlic blend into a tub of hummus that costs a fraction of the pre-made version. We audit the exact per-ounce gap between homemade and the leading grocery brand.</p>
+            </header>
+
+            <div class="recipe-blueprint-grid">
+                <!-- Ingredients Ledger Panel -->
+                <div class="ledger-panel">
+                    <div class="ledger-header">
+                        <h2 class="font-mono">INGREDIENT UNIT LEDGER</h2>
+                        <div class="serving-control font-mono">
+                            <span>SERVINGS:</span>
+                            <button class="serve-btn" id="minus-btn">-</button>
+                            <span id="serving-multiplier" class="bold">6</span>
+                            <button class="serve-btn" id="plus-btn">+</button>
+                        </div>
+                    </div>
+
+                    <div class="ledger-table font-mono">
+                        <div class="ledger-row table-head">
+                            <span>INGREDIENT ITEM</span>
+                            <span>QTY</span>
+                            <span>UNIT COST</span>
+                        </div>
+
+                        <div class="ledger-row ingredient-item" data-base-qty="1" data-unit-price="0.9" data-unit="can (15oz)" data-whole="true">
+                            <span>Chickpeas (Can)</span>
+                            <span class="item-qty">1 can (15oz)</span>
+                            <span class="item-cost">$0.90</span>
+                        </div>
+                        <div class="ledger-row ingredient-item" data-base-qty="2" data-unit-price="0.3" data-unit="tbsp" data-whole="false">
+                            <span>Tahini</span>
+                            <span class="item-qty">2 tbsp</span>
+                            <span class="item-cost">$0.60</span>
+                        </div>
+                        <div class="ledger-row ingredient-item" data-base-qty="1" data-unit-price="0.5" data-unit="lemon" data-whole="true">
+                            <span>Lemon, Juiced</span>
+                            <span class="item-qty">1 lemon</span>
+                            <span class="item-cost">$0.50</span>
+                        </div>
+                        <div class="ledger-row ingredient-item" data-base-qty="1" data-unit-price="0.1" data-unit="clove" data-whole="true">
+                            <span>Garlic Clove</span>
+                            <span class="item-qty">1 clove</span>
+                            <span class="item-cost">$0.10</span>
+                        </div>
+                        <div class="ledger-row ingredient-item" data-base-qty="2" data-unit-price="0.18" data-unit="tbsp" data-whole="false">
+                            <span>Olive Oil</span>
+                            <span class="item-qty">2 tbsp</span>
+                            <span class="item-cost">$0.36</span>
+                        </div>
+
+                        <div class="ledger-total-row">
+                            <span>ESTIMATED TOTAL MATRIX:</span>
+                            <span id="total-price-display">$2.46</span>
+                        </div>
+                        <div class="ledger-total-row cost-per-serving">
+                            <span>COST PER SERVING:</span>
+                            <span id="per-serving-display" class="color-yellow">$0.41</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Preparation Protocol -->
+                <div class="protocol-panel">
+                    <h2 class="font-display">Preparation Protocol</h2>
+                    <ol class="protocol-list">
+                        <li><strong>Blend the Base:</strong> Combine drained chickpeas, tahini, lemon juice, and garlic in a food processor.</li>
+                        <li><strong>Process:</strong> Blend until smooth, streaming in olive oil and a splash of water as needed to reach a creamy consistency.</li>
+                        <li><strong>Taste and Adjust:</strong> Taste and adjust salt, lemon, or tahini to preference.</li>
+                        <li><strong>Serve:</strong> Serve drizzled with extra olive oil, alongside vegetables or pita.</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer" style="background-color: #141312; color: #fff; padding: 40px 20px; text-align: center;">
+        <p>&copy; 2026 SaverBites. All rights reserved.</p>
+        <div style="margin-top: 15px; font-size: 0.9rem;">
+            <a href="../about.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">About</a> |
+            <a href="../blog.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Blog</a> |
+            <a href="../contact.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Contact</a> |
+            <a href="../privacy.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
+            <a href="../terms.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+        </div>
+    </footer>
+
+    <!-- Micro-Calculator Logic -->
+    <script>
+        const baseServings = 6;
+        let currentServings = 6;
+
+        const minusBtn = document.getElementById('minus-btn');
+        const plusBtn = document.getElementById('plus-btn');
+        const servingDisplay = document.getElementById('serving-multiplier');
+        const totalDisplay = document.getElementById('total-price-display');
+        const perServingDisplay = document.getElementById('per-serving-display');
+        const rows = document.querySelectorAll('.ingredient-item');
+
+        function formatQty(qty, isWhole) {
+            if (isWhole) return Math.round(qty).toString();
+            const rounded = Math.round(qty * 100) / 100;
+            // show 1 decimal unless it needs 2 for accuracy
+            const oneDecimal = Math.round(qty * 10) / 10;
+            return (Math.abs(oneDecimal - rounded) < 0.001) ? oneDecimal.toString() : rounded.toString();
+        }
+
+        function updateLedger() {
+            let newTotal = 0;
+            const factor = currentServings / baseServings;
+
+            servingDisplay.textContent = currentServings;
+
+            rows.forEach(row => {
+                const baseQty = parseFloat(row.getAttribute('data-base-qty'));
+                const unitPrice = parseFloat(row.getAttribute('data-unit-price'));
+                const unit = row.getAttribute('data-unit');
+                const isWhole = row.getAttribute('data-whole') === 'true';
+
+                const calculatedQty = baseQty * factor;
+                const calculatedCost = calculatedQty * unitPrice;
+                newTotal += calculatedCost;
+
+                const qtySpan = row.querySelector('.item-qty');
+                const costSpan = row.querySelector('.item-cost');
+
+                qtySpan.textContent = `${formatQty(calculatedQty, isWhole)} ${unit}`;
+                costSpan.textContent = `$${calculatedCost.toFixed(2)}`;
+            });
+
+            totalDisplay.textContent = `$${newTotal.toFixed(2)}`;
+            perServingDisplay.textContent = `$${(newTotal / currentServings).toFixed(2)}`;
+        }
+
+        plusBtn.addEventListener('click', () => { currentServings += 1; updateLedger(); });
+        minusBtn.addEventListener('click', () => { if (currentServings > 1) { currentServings -= 1; updateLedger(); } });
+    </script>
+</body>
+</html>
