@@ -21,11 +21,26 @@
     <style>
         /* 🎨 CENTRALIZED COLOR MATRIX */
         :root {
-            --accent-color: #00FF66;        /* High-contrast Terminal Green */
-            --banner-bg: #141312;           /* Deep Onyx Black */
-            --banner-text: #FFFFFF;         /* Crisp White */
-            --bubble-bg-default: #EFECE6;   /* Subtle Gray-Muted Cream */
-            --text-dark: #141312;
+            --accent-color: #00CC44;        /* Darker green for white background visibility */
+            --banner-bg: #141312;           /* Deep Onyx Black for top banner */
+            --banner-text: #FFFFFF;         /* Crisp White text */
+            --bubble-bg-default: #F5F4F0;   /* Muted cream for category bubbles */
+            --text-dark: #141312;           /* Main dark text */
+            --site-bg: #FFFFFF;             /* White main background */
+        }
+
+        /* --- Global Reset Overrides for White Theme --- */
+        body, main, .hero-section, .section {
+            background-color: var(--site-bg) !important;
+            color: var(--text-dark) !important;
+        }
+
+        .hero-text h1 {
+            color: var(--text-dark) !important;
+        }
+
+        .hero-sub {
+            color: #4A4A4A !important;      /* Soft dark grey for readable description text */
         }
 
         /* --- Top Utility Announcement Banner --- */
@@ -42,15 +57,43 @@
         
         .top-utility-banner .highlight-tag {
             background-color: var(--accent-color);
-            color: var(--text-dark);
+            color: #FFFFFF;
             padding: 2px 6px;
             font-weight: bold;
             margin-right: 8px;
             border-radius: 2px;
         }
 
-        /* --- Homepage-specific helpers --- */
-        .card-title-link { color: inherit; text-decoration: none; }
+        /* --- Navigation & Layout Adjustments --- */
+        .site-header {
+            background-color: #FFFFFF !important;
+            border-bottom: 1px solid #E0E0E0 !important;
+        }
+
+        .logo {
+            color: var(--text-dark) !important;
+        }
+
+        .nav-link {
+            color: #4A4A4A !important;
+        }
+
+        .nav-link.active {
+            color: var(--text-dark) !important;
+            font-weight: bold;
+        }
+
+        /* --- Receipt Widget (Styled cleanly to pop off the white layout) --- */
+        .receipt-widget {
+            background: #FFFFFF !important;
+            color: #141312 !important;
+            border: 2px solid #141312 !important;
+            box-shadow: 5px 5px 0px #141312;
+        }
+
+        /* --- Card and Text Adjustments --- */
+        .card-title-link { color: var(--text-dark); text-decoration: none; }
+        .card-title-link:hover { color: var(--accent-color); }
         .card-link {
             display: block;
             margin-top: 15px;
@@ -62,7 +105,6 @@
             letter-spacing: 0.05em;
         }
         
-        /* Direct class color override for script/widget output formatting */
         .color-yellow {
             color: var(--accent-color) !important;
         }
@@ -91,7 +133,7 @@
         <section class="hero-section">
             <div class="container hero-grid">
                 <div class="hero-text">
-                    <span class="hero-badge font-mono" style="border-color: var(--accent-color);">ESTIMATES ARE LIES. DATA IS DELICIOUS.</span>
+                    <span class="hero-badge font-mono" style="border-color: var(--text-dark); color: var(--text-dark);">ESTIMATES ARE LIES. DATA IS DELICIOUS.</span>
                     <h1>Inflation-proof your kitchen. Know every cent.</h1>
                     <p class="hero-sub">Welcome to SaverBites. We break budgets down to the exact gram, milliliter, and grocery store receipt line item. Authentic food, audited costs.</p>
                 </div>
@@ -135,7 +177,7 @@
                     <span class="category-label font-mono">Quick</span>
                 </button>
                 <button class="category-item filter-btn" data-filter="all">
-                    <div class="category-bubble" style="background-color: var(--accent-color); color: #141312;">➔</div>
+                    <div class="category-bubble" style="background-color: var(--text-dark); color: #FFFFFF;">➔</div>
                     <span class="category-label font-mono">All Recipes</span>
                 </button>
             </div>
