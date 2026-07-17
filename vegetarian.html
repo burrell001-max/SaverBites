@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZBXY9G1M4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-FZBXY9G1M4');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vegetarian — SaverBites</title>
+    <title>Vegetarian Financial Matrix — SaverBites</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .grid-matrix { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; margin-top: 30px; }
+        .recipe-card { background: #FFFFFF; border: 2px solid #141312; box-shadow: 4px 4px 0px #141312; padding: 20px; transition: transform 0.2s; }
+        .recipe-card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0px #141312; }
+        .card-meta { display: flex; justify-content: space-between; font-size: 0.8rem; border-bottom: 1px solid #E0E0E0; padding-bottom: 8px; margin-bottom: 12px; }
+        .card-btn { display: block; text-align: center; background: #141312; color: #FFFFFF; padding: 10px; text-decoration: none; font-weight: 600; margin-top: 15px; font-size: 0.9rem; }
+        .card-btn:hover { background: #00CC44; }
+    </style>
 </head>
 <body>
 
     <header class="site-header">
         <div class="header-container">
-            <a href="index.html" class="logo">SAVER<span class="logo-accent">BITES</span></a>
+            <a href="index.html" class="logo">SAVER<span class="logo-accent" style="color: #00CC44;">BITES</span></a>
             <nav class="nav">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="pasta.html" class="nav-link">Pasta Dishes</a>
@@ -32,152 +31,39 @@
         </div>
     </header>
 
-    <main>
-        <section class="section container">
-            <span class="hero-badge font-mono">NO MEAT LINE ITEM. NO PROTEIN COMPROMISE.</span>
-            <h1 class="section-heading" style="margin-top: 10px;">Vegetarian Matrix Audits</h1>
-            <p style="max-width: 640px; color: #555;">Meat is usually the most expensive line on the receipt. Cut it and the savings compound fast — as long as you know which plant proteins actually deliver. Here's the audited data.</p>
+    <main class="container" style="padding: 40px 20px;">
+        <span class="hero-badge font-mono" style="color: #141312; border-color: #141312;">INDEX LOG // CATEGORY: VEGETARIAN</span>
+        <h1 style="font-family: 'Fraunces', serif; font-size: 2.5rem; margin-top: 10px;">Legume & Tuber Asset Portfolios</h1>
+        <p style="color: #555; max-width: 600px; line-height: 1.6;">Maximized plant-based macro scaling. Eliminating premium animal protein costs by focusing on structural starches and fiber-dense seed metrics.</p>
 
-            <div class="recipe-grid" style="margin-top: 30px;">
-
-                <div class="recipe-card">
-                    <div class="card-img-placeholder">
-                        <img src="./images/crispy-tofu.jpg" alt="Crispy Tofu Hacks & Nutrient Matrix">
-                    </div>
-                    <div class="card-body">
-                        <span class="card-category font-mono">VEGETARIAN / TOFU</span>
-                        <h3><a href="./recipes/crispy-tofu.html" class="card-title-link">Crispy Tofu Hacks & Nutrient Matrix</a></h3>
-                        <div class="mini-receipt font-mono">
-                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.67</span></div>
-                            <div class="mini-row"><span>TOTAL COST:</span><span>$2.68</span></div>
-                        </div>
-                        <a href="./recipes/crispy-tofu.html" class="card-link">View Full Audit →</a>
-                    </div>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="card-img-placeholder">
-                        <img src="./images/dry-vs-canned-black-beans.jpg" alt="Dry vs. Canned: The Real Cost-Per-Gram of Bulk Black Beans">
-                    </div>
-                    <div class="card-body">
-                        <span class="card-category font-mono">BEANS / BULK</span>
-                        <h3><a href="./recipes/dry-vs-canned-black-beans.html" class="card-title-link">Dry vs. Canned: The Real Cost-Per-Gram of Bulk Black Beans</a></h3>
-                        <div class="mini-receipt font-mono">
-                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.34</span></div>
-                            <div class="mini-row"><span>TOTAL COST:</span><span>$2.06</span></div>
-                        </div>
-                        <a href="./recipes/dry-vs-canned-black-beans.html" class="card-link">View Full Audit →</a>
-                    </div>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="card-img-placeholder">
-                        <img src="./images/egg-fried-rice-economics.jpg" alt="Egg Fried Rice Economics: Turning Day-Old Rice Into a Full Meal">
-                    </div>
-                    <div class="card-body">
-                        <span class="card-category font-mono">EGGS / SPEED</span>
-                        <h3><a href="./recipes/egg-fried-rice-economics.html" class="card-title-link">Egg Fried Rice Economics: Turning Day-Old Rice Into a Full Meal</a></h3>
-                        <div class="mini-receipt font-mono">
-                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$1.03</span></div>
-                            <div class="mini-row"><span>TOTAL COST:</span><span>$2.05</span></div>
-                        </div>
-                        <a href="./recipes/egg-fried-rice-economics.html" class="card-link">View Full Audit →</a>
-                    </div>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="card-img-placeholder">
-                        <img src="./images/roasted-chickpea-audit.jpg" alt="Roasted Chickpea Audit: A Snack That Undercuts Store-Bought Crackers">
-                    </div>
-                    <div class="card-body">
-                        <span class="card-category font-mono">SNACK / PROTEIN</span>
-                        <h3><a href="./recipes/roasted-chickpea-audit.html" class="card-title-link">Roasted Chickpea Audit: A Snack That Undercuts Store-Bought Crackers</a></h3>
-                        <div class="mini-receipt font-mono">
-                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.30</span></div>
-                            <div class="mini-row"><span>TOTAL COST:</span><span>$1.19</span></div>
-                        </div>
-                        <a href="./recipes/roasted-chickpea-audit.html" class="card-link">View Full Audit →</a>
-                    </div>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="card-img-placeholder">
-                        <img src="./images/lentil-bolognese.jpg" alt="Lentil Bolognese: Replacing Ground Beef Without Losing the Umami">
-                    </div>
-                    <div class="card-body">
-                        <span class="card-category font-mono">LEGUMES / SAUCE</span>
-                        <h3><a href="./recipes/lentil-bolognese.html" class="card-title-link">Lentil Bolognese: Replacing Ground Beef Without Losing the Umami</a></h3>
-                        <div class="mini-receipt font-mono">
-                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$1.93</span></div>
-                            <div class="mini-row"><span>TOTAL COST:</span><span>$7.70</span></div>
-                        </div>
-                        <a href="./recipes/lentil-bolognese.html" class="card-link">View Full Audit →</a>
-                    </div>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="card-img-placeholder">
-                        <img src="./images/peanut-butter-noodle-sauce.jpg" alt="Peanut Butter Noodle Sauce: A Pantry Staple That Beats Bottled Dressing">
-                    </div>
-                    <div class="card-body">
-                        <span class="card-category font-mono">PANTRY / SAUCE</span>
-                        <h3><a href="./recipes/peanut-butter-noodle-sauce.html" class="card-title-link">Peanut Butter Noodle Sauce: A Pantry Staple That Beats Bottled Dressing</a></h3>
-                        <div class="mini-receipt font-mono">
-                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.47</span></div>
-                            <div class="mini-row"><span>TOTAL COST:</span><span>$1.90</span></div>
-                        </div>
-                        <a href="./recipes/peanut-butter-noodle-sauce.html" class="card-link">View Full Audit →</a>
-                    </div>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="card-img-placeholder">
-                        <img src="./images/sheet-pan-seasonal-audit.jpg" alt="Sheet Pan Seasonal Audit: Buying Whatever's Cheapest That Week">
-                    </div>
-                    <div class="card-body">
-                        <span class="card-category font-mono">PRODUCE / SEASONAL</span>
-                        <h3><a href="./recipes/sheet-pan-seasonal-audit.html" class="card-title-link">Sheet Pan Seasonal Audit: Buying Whatever's Cheapest That Week</a></h3>
-                        <div class="mini-receipt font-mono">
-                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.52</span></div>
-                            <div class="mini-row"><span>TOTAL COST:</span><span>$2.08</span></div>
-                        </div>
-                        <a href="./recipes/sheet-pan-seasonal-audit.html" class="card-link">View Full Audit →</a>
-                    </div>
-                </div>
-
-                <div class="recipe-card">
-                    <div class="card-img-placeholder">
-                        <img src="./images/homemade-hummus.jpg" alt="Homemade Hummus: Undercutting the Store-Bought Tub by 65%">
-                    </div>
-                    <div class="card-body">
-                        <span class="card-category font-mono">DIPS / BULK</span>
-                        <h3><a href="./recipes/homemade-hummus.html" class="card-title-link">Homemade Hummus: Undercutting the Store-Bought Tub by 65%</a></h3>
-                        <div class="mini-receipt font-mono">
-                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.41</span></div>
-                            <div class="mini-row"><span>TOTAL COST:</span><span>$2.46</span></div>
-                        </div>
-                        <a href="./recipes/homemade-hummus.html" class="card-link">View Full Audit →</a>
-                    </div>
-                </div>
-
+        <div class="grid-matrix">
+            
+            <!-- Card 1 -->
+            <div class="recipe-card">
+                <div class="card-meta font-mono"><span>ID: VEG_CHANA_01</span> <span style="color: #00CC44;">$0.57/SERV</span></div>
+                <h3 style="font-family: 'Fraunces', serif; font-size: 1.3rem; margin: 5px 0;">Budget Chana Masala</h3>
+                <p style="font-size: 0.9rem; color: #666; line-height: 1.5; margin-bottom: 10px;">Oil-soluble spice blooming extraction inside a deep onion and crushed tomato glaze reduction.</p>
+                <a href="recipes/chana-masala-budget.html" class="card-btn font-mono">LAUNCH AUDIT</a>
             </div>
-        </section>
+
+            <!-- Card 2 -->
+            <div class="recipe-card">
+                <div class="card-meta font-mono"><span>ID: VEG_FRIT_02</span> <span style="color: #00CC44;">$0.62/SERV</span></div>
+                <h3 style="font-family: 'Fraunces', serif; font-size: 1.3rem; margin: 5px 0;">Potato Frittata Matrix</h3>
+                <p style="font-size: 0.9rem; color: #666; line-height: 1.5; margin-bottom: 10px;">Starch cake stacking frameworks configured to stretch limited egg lipid volumes to maximum depths.</p>
+                <a href="recipes/potato-frittata-efficiency.html" class="card-btn font-mono">LAUNCH AUDIT</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="recipe-card">
+                <div class="card-meta font-mono"><span>ID: VEG_OAT_CONGEE_03</span> <span style="color: #00CC44;">$0.64/SERV</span></div>
+                <h3 style="font-family: 'Fraunces', serif; font-size: 1.3rem; margin: 5px 0;">Savory Oat Congee</h3>
+                <p style="font-size: 0.9rem; color: #666; line-height: 1.5; margin-bottom: 10px;">Extreme grain expansion processing rolled oats past standard fluid thresholds into savory creams.</p>
+                <a href="recipes/savory-oat-congee.html" class="card-btn font-mono">LAUNCH AUDIT</a>
+            </div>
+
+        </div>
     </main>
 
-    <footer class="footer" style="background-color: #141312; color: #fff; padding: 40px 20px; text-align: center;">
-        <p>&copy; 2026 SaverBites. All rights reserved.</p>
-        <div style="margin-top: 15px; font-size: 0.9rem;">
-            <a href="about.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">About</a> |
-            <a href="blog.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Blog</a> |
-            <a href="contact.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Contact</a> |
-            <a href="privacy.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
-            <a href="terms.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Terms of Service</a>
-        </div>
-    </footer>
-
-    <style>
-        .card-title-link { color: inherit; text-decoration: none; }
-        .card-link { display: block; margin-top: 15px; color: #FFC820; font-weight: bold; text-decoration: none; }
-    </style>
 </body>
 </html>
