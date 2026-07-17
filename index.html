@@ -17,23 +17,67 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    
     <style>
-        /* Homepage-specific helpers — consolidated so accent color lives in one place */
+        /* 🎨 CENTRALIZED COLOR MATRIX */
+        :root {
+            --accent-color: #00FF66;        /* High-contrast Terminal Green */
+            --banner-bg: #141312;           /* Deep Onyx Black */
+            --banner-text: #FFFFFF;         /* Crisp White */
+            --bubble-bg-default: #EFECE6;   /* Subtle Gray-Muted Cream */
+            --text-dark: #141312;
+        }
+
+        /* --- Top Utility Announcement Banner --- */
+        .top-utility-banner {
+            background-color: var(--banner-bg);
+            color: var(--banner-text);
+            text-align: center;
+            padding: 10px 15px;
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        
+        .top-utility-banner .highlight-tag {
+            background-color: var(--accent-color);
+            color: var(--text-dark);
+            padding: 2px 6px;
+            font-weight: bold;
+            margin-right: 8px;
+            border-radius: 2px;
+        }
+
+        /* --- Homepage-specific helpers --- */
         .card-title-link { color: inherit; text-decoration: none; }
         .card-link {
             display: block;
             margin-top: 15px;
-            color: #FFC820;
+            color: var(--accent-color);
             font-weight: bold;
             text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Direct class color override for script/widget output formatting */
+        .color-yellow {
+            color: var(--accent-color) !important;
         }
     </style>
 </head>
 <body>
 
+    <!-- 💡 TOP BANNER LAYER -->
+    <div class="top-utility-banner font-mono">
+        <span class="highlight-tag">LIVE AUDIT</span> Q3 REAL-TIME INFLATION TRACKING MATRIX IS NOW ACTIVE.
+    </div>
+
     <header class="site-header">
         <div class="header-container">
-            <a href="index.html" class="logo">SAVER<span class="logo-accent">BITES</span></a>
+            <a href="index.html" class="logo">SAVER<span class="logo-accent" style="color: var(--accent-color);">BITES</span></a>
             <nav class="nav">
                 <a href="index.html" class="nav-link active">Home</a>
                 <a href="pasta.html" class="nav-link">Pasta Dishes</a>
@@ -47,7 +91,7 @@
         <section class="hero-section">
             <div class="container hero-grid">
                 <div class="hero-text">
-                    <span class="hero-badge font-mono">ESTIMATES ARE LIES. DATA IS DELICIOUS.</span>
+                    <span class="hero-badge font-mono" style="border-color: var(--accent-color);">ESTIMATES ARE LIES. DATA IS DELICIOUS.</span>
                     <h1>Inflation-proof your kitchen. Know every cent.</h1>
                     <p class="hero-sub">Welcome to SaverBites. We break budgets down to the exact gram, milliliter, and grocery store receipt line item. Authentic food, audited costs.</p>
                 </div>
@@ -71,27 +115,27 @@
         <section class="category-section container">
             <div class="category-wrapper">
                 <button class="category-item filter-btn" data-filter="under-10">
-                    <div class="category-bubble" style="background-color: #EFECE6;">🍜</div>
+                    <div class="category-bubble" style="background-color: var(--bubble-bg-default);">🍜</div>
                     <span class="category-label font-mono">Under $10</span>
                 </button>
                 <button class="category-item filter-btn" data-filter="pasta">
-                    <div class="category-bubble" style="background-color: #EFECE6;">🍝</div>
+                    <div class="category-bubble" style="background-color: var(--bubble-bg-default);">🍝</div>
                     <span class="category-label font-mono">Pasta</span>
                 </button>
                 <button class="category-item filter-btn" data-filter="one-pot">
-                    <div class="category-bubble" style="background-color: #EFECE6;">🍲</div>
+                    <div class="category-bubble" style="background-color: var(--bubble-bg-default);">🍲</div>
                     <span class="category-label font-mono">One Pot</span>
                 </button>
                 <button class="category-item filter-btn" data-filter="vegetarian">
-                    <div class="category-bubble" style="background-color: #EFECE6;">🥦</div>
+                    <div class="category-bubble" style="background-color: var(--bubble-bg-default);">🥦</div>
                     <span class="category-label font-mono">Vegetarian</span>
                 </button>
                 <button class="category-item filter-btn" data-filter="quick">
-                    <div class="category-bubble" style="background-color: #EFECE6;">⚡</div>
+                    <div class="category-bubble" style="background-color: var(--bubble-bg-default);">⚡</div>
                     <span class="category-label font-mono">Quick</span>
                 </button>
                 <button class="category-item filter-btn" data-filter="all">
-                    <div class="category-bubble" style="background-color: #FFC820; color: #141312;">➔</div>
+                    <div class="category-bubble" style="background-color: var(--accent-color); color: #141312;">➔</div>
                     <span class="category-label font-mono">All Recipes</span>
                 </button>
             </div>
@@ -289,11 +333,11 @@
     <footer class="footer" style="background-color: #141312; color: #fff; padding: 40px 20px; text-align: center;">
         <p>&copy; 2026 SaverBites. All rights reserved.</p>
         <div style="margin-top: 15px; font-size: 0.9rem;">
-            <a href="about.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">About</a> |
-            <a href="blog.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Blog</a> |
-            <a href="contact.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Contact</a> |
-            <a href="privacy.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
-            <a href="terms.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+            <a href="about.html" style="color: var(--accent-color); margin: 0 10px; text-decoration: none;">About</a> |
+            <a href="blog.html" style="color: var(--accent-color); margin: 0 10px; text-decoration: none;">Blog</a> |
+            <a href="contact.html" style="color: var(--accent-color); margin: 0 10px; text-decoration: none;">Contact</a> |
+            <a href="privacy.html" style="color: var(--accent-color); margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
+            <a href="terms.html" style="color: var(--accent-color); margin: 0 10px; text-decoration: none;">Terms of Service</a>
         </div>
     </footer>
 
@@ -308,7 +352,7 @@
 
                 recipeCards.forEach(card => {
                     const rawCategories = card.getAttribute('data-categories');
-                    if (!rawCategories) return; // Skips any broken cards without tags
+                    if (!rawCategories) return; 
 
                     const cardCategories = rawCategories.trim().split(/\s+/);
 
