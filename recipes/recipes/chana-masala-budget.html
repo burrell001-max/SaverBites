@@ -11,17 +11,13 @@
     <style>
         .recipe-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; margin-top: 40px; }
         @media (max-width: 768px) { .recipe-layout { grid-template-columns: 1fr; } }
-        
         .audit-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.95rem; }
         .audit-table th { background-color: #141312; color: #FFFFFF; text-align: left; padding: 12px; font-weight: 600; }
         .audit-table td { padding: 12px; border-bottom: 1px solid #E0E0E0; }
-        .audit-table tr:hover { background-color: #F5F4F0; }
-
         .step-block { margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px dashed #E0E0E0; }
         .step-num { font-weight: bold; color: #00CC44; margin-right: 10px; }
-
         .sticky-sidebar { position: sticky; top: 40px; }
-        .receipt-widget { background: #FFFFFF; color: #141312; border: 2px solid #141312; box-shadow: 5px 5px 0px #141312; padding: 25px; }
+        .ticket-box { background: #F9F9F6; border: 2px solid #141312; box-shadow: 4px 4px 0px #141312; padding: 25px; }
     </style>
 </head>
 <body>
@@ -33,128 +29,99 @@
                 <a href="../index.html" class="nav-link">Home</a>
                 <a href="../pasta.html" class="nav-link">Pasta Dishes</a>
                 <a href="../onepot.html" class="nav-link">One Pot Meals</a>
-                <a href="../vegetarian.html" class="nav-link">Vegetarian</a>
+                <a href="../vegetarian.html" class="nav-link active">Vegetarian</a>
             </nav>
         </div>
     </header>
 
-    <main style="background-color: #FFFFFF;">
-        <section class="section container" style="padding: 40px 20px;">
-            <a href="../vegetarian.html" style="color: #00CC44; text-decoration: none; font-weight: bold; font-size: 0.85rem;" class="font-mono">← BACK TO VEGETARIAN INDEX</a>
+    <main class="container" style="padding: 40px 20px;">
+        <span class="hero-badge font-mono">FILE NO // VEG_CHANA_01</span>
+        <h1 style="font-family: 'Fraunces', serif; font-size: 3rem; margin: 10px 0 5px 0;">Budget Chana Masala</h1>
+        <p style="color: #666; font-size: 1.1rem; max-width: 700px;">Oil-soluble spice blooming extraction inside a deep onion and crushed tomato glaze reduction. A high-protein legume foundation built for absolute cost efficiency.</p>
+
+        <div class="recipe-layout">
             
-            <div class="recipe-layout">
+            <!-- LEFT COLUMN: CONTENT -->
+            <div class="main-blueprint">
                 
-                <!-- LEFT COLUMN: CONTENT & TABLES -->
-                <div>
-                    <span class="hero-badge font-mono" style="border-color: #141312; color: #141312; margin-bottom: 15px;">AUDIT ID: VEG_CHANA_01</span>
-                    <h1 style="font-family: 'Fraunces', serif; font-size: 2.5rem; margin: 10px 0; color: #141312;">Budget Chana Masala Matrix</h1>
-                    <p style="color: #555; line-height: 1.7; font-size: 1.1rem;">An optimization of legume-based protein metrics. By processing canned or soaked chickpeas into a deep caramel onion-and-tomato reduction, we unlock highly dense, fiber-rich nutritional value while eliminating expensive secondary protein parameters.</p>
+                <h2 style="font-family: 'Fraunces', serif; border-bottom: 2px solid #141312; padding-bottom: 8px;">1. Component Unit Ledger</h2>
+                <table class="audit-table font-mono">
+                    <thead>
+                        <tr>
+                            <th>Ingredient Component</th>
+                            <th>Volume/Mass</th>
+                            <th>Unit Cost Matrix</th>
+                            <th>Total Cost Allocation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Canned Garbanzo Beans (Chickpeas)</td>
+                            <td>2 Cans (800g total)</td>
+                            <td>$0.0011 / g</td>
+                            <td>$0.88</td>
+                        </tr>
+                        <tr>
+                            <td>Storage Yellow Onions (Minced)</td>
+                            <td>2 Medium (220g)</td>
+                            <td>$0.0014 / g</td>
+                            <td>$0.31</td>
+                        </tr>
+                        <tr>
+                            <td>Canned Tomato Sauce / Puree</td>
+                            <td>1 Can (400g)</td>
+                            <td>$0.0012 / g</td>
+                            <td>$0.48</td>
+                        </tr>
+                        <tr>
+                            <td>Vegetable Oil</td>
+                            <td>30ml (2 tbsp)</td>
+                            <td>$0.0020 / ml</td>
+                            <td>$0.06</td>
+                        </tr>
+                        <tr>
+                            <td>Core Spice Matrix (Garam Masala, Cumin, Turmeric)</td>
+                            <td>15g Total</td>
+                            <td>Bulk Matrix</td>
+                            <td>$0.55</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                    <!-- Ingredient Breakdown Ledger -->
-                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">1. Component Unit Ledger</h2>
-                    <table class="audit-table">
-                        <thead>
-                            <tr class="font-mono" style="font-size: 0.8rem;">
-                                <th>INGREDIENT COMPONENT</th>
-                                <th>QUANTITY USED</th>
-                                <th>UNIT COST MATRIX</th>
-                                <th>TOTAL COST</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Canned Chickpeas (Garbanzo)</td>
-                                <td>800g (2 Cans)</td>
-                                <td class="font-mono">$0.0011 / g</td>
-                                <td class="font-mono" style="font-weight: 600;">$0.88</td>
-                            </tr>
-                            <tr>
-                                <td>Yellow Onions (Finely Diced)</td>
-                                <td>300g (2 Medium)</td>
-                                <td class="font-mono">$0.0014 / g</td>
-                                <td class="font-mono" style="font-weight: 600;">$0.42</td>
-                            </tr>
-                            <tr>
-                                <td>Canned Crushed Tomatoes</td>
-                                <td>400g (1 Can)</td>
-                                <td class="font-mono">$0.0015 / g</td>
-                                <td class="font-mono" style="font-weight: 600;">$0.60</td>
-                            </tr>
-                            <tr>
-                                <td>Ginger-Garlic Aromatics Matrix</td>
-                                <td>30g combined</td>
-                                <td class="font-mono">$0.008 / g</td>
-                                <td class="font-mono" style="font-weight: 600;">$0.24</td>
-                            </tr>
-                            <tr>
-                                <td>Garam Masala, Turmeric, Cumin</td>
-                                <td>15g total</td>
-                                <td class="font-mono">Pantry Stock</td>
-                                <td class="font-mono" style="font-weight: 600;">$0.15</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <!-- Preparation Steps -->
-                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">2. Optimization Steps</h2>
-                    <div style="margin-top: 20px;">
-                        <div class="step-block">
-                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">01 /</span> <strong>Onion Caramelization:</strong> Finely dice your yellow onions. Heat vegetable oil in a pan and cook the onions slowly over medium heat for 12 to 15 minutes. They must turn a deep, dark brown color without burning—this deep browning serves as the flavor substrate for the entire gravy base.</p>
-                        </div>
-                        <div class="step-block">
-                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">02 /</span> <strong>Spice Blooming Threshold:</strong> Drop your minced ginger, garlic, and dried spices directly into the hot onion oil. Stir rapidly for 60 seconds. Blooming the spice compounds in oil instead of water releases their full aromatic oil-soluble flavor metrics, amplifying the taste profiles.</p>
-                        </div>
-                        <div class="step-block">
-                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">03 /</span> <strong>Legume Compression:</strong> Pour in your tomatoes and drained chickpeas. Cover and simmer for 20 minutes on low heat. Before serving, take a flat spatula or potato masher and firmly crush 20% of the chickpeas against the pan floor—the exposed starches will emulsify the pan liquids into a thick, restaurant-quality masala glaze.</p>
-                        </div>
-                    </div>
+                <h2 style="font-family: 'Fraunces', serif; border-bottom: 2px solid #141312; padding-bottom: 8px; margin-top: 50px;">2. Optimization Steps</h2>
+                
+                <div class="step-block">
+                    <p><span class="step-num font-mono">01 /</span><strong>The Browning Phase:</strong> Heat the oil in a large deep pan over medium-high heat. Add your finely minced yellow onions. Cook for roughly 8 to 10 minutes, stirring frequently, until the edges turn deeply golden brown to form the flavor bedrock.</p>
                 </div>
 
-                <!-- RIGHT COLUMN: FINANCIAL AUDIT STICKY SIDEBAR -->
-                <div class="sticky-sidebar">
-                    <div class="receipt-widget">
-                        <div class="font-mono" style="text-align: center; font-weight: bold; letter-spacing: 0.05em; font-size: 1.1rem;">SAVERBITES AUDIT TICKET</div>
-                        <div style="border-bottom: 2px dashed #141312; margin: 15px 0;"></div>
-                        
-                        <div class="font-mono" style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 8px;">
-                            <span>ITEM: VEG_CHANA_01</span>
-                            <span>QTY: 4 SERVINGS</span>
-                        </div>
-                        
-                        <div style="border-bottom: 1px solid #E0E0E0; margin: 10px 0;"></div>
-                        
-                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
-                            <span>01/ TOTAL YIELD CAP</span>
-                            <span style="font-weight: 600;">$2.29</span>
-                        </div>
-                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
-                            <span>02/ COST PER SERVING</span>
-                            <span style="font-weight: 600; color: #00CC44;">$0.57</span>
-                        </div>
-                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
-                            <span>03/ ACTIVE BUILD TIME</span>
-                            <span>35 MIN</span>
-                        </div>
-                        
-                        <div style="border-bottom: 2px dashed #141312; margin: 15px 0;"></div>
-                        <div class="font-mono" style="text-align: center; letter-spacing: 0.15em; font-size: 0.9rem; opacity: 0.7;">|||| |||||| ||| ||||| ||</div>
-                    </div>
+                <div class="step-block">
+                    <p><span class="step-num font-mono">02 /</span><strong>Lipid Spice Blooming:</strong> Turn heat down to low. Toss your cumin, turmeric, and garam masala spices directly into the hot onion-fat mixture. Stir constantly for 60 seconds. Blooming the spices directly in hot oil releases hydrophobic aromatic chemicals that water can't draw out.</p>
                 </div>
 
+                <div class="step-block">
+                    <p><span class="step-num font-mono">03 /</span><strong>Simmer Integration:</strong> Pour in the canned tomato sauce and rinsed chickpeas. Bring to a gentle bubble, then turn down low. Cover and let simmer for 15 minutes, crushing a few chickpeas against the side of the pan with your spoon to thicken the gravy naturally.</p>
+                </div>
             </div>
-        </section>
-    </main>
 
-    <footer class="footer" style="background-color: #141312; color: #fff; padding: 40px 20px; text-align: center;">
-        <p>&copy; 2026 SaverBites. All rights reserved.</p>
-        <div style="margin-top: 15px; font-size: 0.9rem;">
-            <a href="../about.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">About</a> |
-            <a href="../blog.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Blog</a> |
-            <a href="../contact.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Contact</a> |
-            <a href="../privacy.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
-            <a href="../terms.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+            <!-- RIGHT COLUMN: SIDEBAR TICKET -->
+            <div class="sidebar-blueprint">
+                <div class="sticky-sidebar">
+                    <div class="ticket-box">
+                        <span class="font-mono" style="font-size: 0.8rem; display: block; letter-spacing: 1px; color: #666; border-bottom: 1px dashed #A0A0A0; padding-bottom: 5px; margin-bottom: 15px;">SAVERBITES AUDIT TICKET</span>
+                        <div style="font-family: 'Fraunces', serif; font-size: 2rem; color: #00CC44; font-weight: bold; margin-bottom: 15px;">$0.57 <span style="font-size: 1rem; color: #141312; font-family: 'Inter', sans-serif;">/ serving</span></div>
+                        <p class="font-mono" style="font-size: 0.85rem; line-height: 1.6; margin: 0;">
+                            <strong>PORTION YIELD:</strong> 4 Servings<br>
+                            <strong>TOTAL MATRIC COST:</strong> $2.28<br>
+                            <strong>ACTIVE BUILD TIME:</strong> 25 Minutes<br>
+                            <strong>THERMAL PROFILE:</strong> Low Simmer Base
+                        </p>
+                        <a href="../vegetarian.html" class="font-mono" style="display: block; text-align: center; background: #141312; color: #FFF; text-decoration: none; padding: 12px; margin-top: 20px; font-weight: bold; font-size: 0.85rem;">RETURN TO INDEX</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </footer>
+    </main>
 
 </body>
 </html>
