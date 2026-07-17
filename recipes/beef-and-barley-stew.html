@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZBXY9G1M4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-FZBXY9G1M4');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beef & Barley Stew: Turning Cheap Stew Meat Into a Six-Serving Pot — SaverBites</title>
+    <title>Audit Matrix: Beef & Barley Stew — SaverBites</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .recipe-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; margin-top: 40px; }
+        @media (max-width: 768px) { .recipe-layout { grid-template-columns: 1fr; } }
+        
+        .audit-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.95rem; }
+        .audit-table th { background-color: #141312; color: #FFFFFF; text-align: left; padding: 12px; font-weight: 600; }
+        .audit-table td { padding: 12px; border-bottom: 1px solid #E0E0E0; }
+        .audit-table tr:hover { background-color: #F5F4F0; }
+
+        .step-block { margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px dashed #E0E0E0; }
+        .step-num { font-weight: bold; color: #00CC44; margin-right: 10px; }
+
+        .sticky-sidebar { position: sticky; top: 40px; }
+        .receipt-widget { background: #FFFFFF; color: #141312; border: 2px solid #141312; box-shadow: 5px 5px 0px #141312; padding: 25px; }
+    </style>
 </head>
 <body>
 
     <header class="site-header">
         <div class="header-container">
-            <a href="../index.html" class="logo">SAVER<span class="logo-accent">BITES</span></a>
+            <a href="../index.html" class="logo">SAVER<span class="logo-accent" style="color: #00CC44;">BITES</span></a>
             <nav class="nav">
                 <a href="../index.html" class="nav-link">Home</a>
                 <a href="../pasta.html" class="nav-link">Pasta Dishes</a>
@@ -32,145 +38,123 @@
         </div>
     </header>
 
-    <main class="container section">
-        <article class="recipe-container">
-            <header class="recipe-post-header">
-                <span class="card-category font-mono">BEEF / GRAINS</span>
-                <h1>Beef & Barley Stew: Turning Cheap Stew Meat Into a Six-Serving Pot</h1>
-                <p class="recipe-intro">Tough, inexpensive stew cuts break down into fork-tender bites after an hour of low simmer, while pearl barley triples in volume — this cut beats sirloin by more than 70% per serving.</p>
-            </header>
+    <main style="background-color: #FFFFFF;">
+        <section class="section container" style="padding: 40px 20px;">
+            <a href="../onepot.html" style="color: #00CC44; text-decoration: none; font-weight: bold; font-size: 0.85rem;" class="font-mono">← BACK TO ONE POT INDEX</a>
+            
+            <div class="recipe-layout">
+                
+                <!-- LEFT COLUMN: CONTENT & TABLES -->
+                <div>
+                    <span class="hero-badge font-mono" style="border-color: #141312; color: #141312; margin-bottom: 15px;">AUDIT ID: POT_BEEF_BARLEY_05</span>
+                    <h1 style="font-family: 'Fraunces', serif; font-size: 2.5rem; margin: 10px 0; color: #141312;">Beef & Barley Stew Blueprint</h1>
+                    <p style="color: #555; line-height: 1.7; font-size: 1.1rem;">A volume expansion play via grain hydration. Instead of scaling up expensive beef metrics, we leverage pearled barley as a high-density asset that absorbs our seasoned broth while introducing robust chew and satiety indexes to the batch.</p>
 
-            <div class="recipe-blueprint-grid">
-                <!-- Ingredients Ledger Panel -->
-                <div class="ledger-panel">
-                    <div class="ledger-header">
-                        <h2 class="font-mono">INGREDIENT UNIT LEDGER</h2>
-                        <div class="serving-control font-mono">
-                            <span>SERVINGS:</span>
-                            <button class="serve-btn" id="minus-btn">-</button>
-                            <span id="serving-multiplier" class="bold">6</span>
-                            <button class="serve-btn" id="plus-btn">+</button>
-                        </div>
-                    </div>
+                    <!-- Ingredient Breakdown Ledger -->
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">1. Component Unit Ledger</h2>
+                    <table class="audit-table">
+                        <thead>
+                            <tr class="font-mono" style="font-size: 0.8rem;">
+                                <th>INGREDIENT COMPONENT</th>
+                                <th>QUANTITY USED</th>
+                                <th>UNIT COST MATRIX</th>
+                                <th>TOTAL COST</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Beef Chuck / Stew Meat Assets</td>
+                                <td>300g</td>
+                                <td class="font-mono">$0.014 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$4.20</td>
+                            </tr>
+                            <tr>
+                                <td>Pearled Barley (Dry Grain Asset)</td>
+                                <td>150g</td>
+                                <td class="font-mono">$0.002 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.30</td>
+                            </tr>
+                            <tr>
+                                <td>Mirepoix Base (Onions, Carrots, Celery)</td>
+                                <td>350g combined</td>
+                                <td class="font-mono">$0.002 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.70</td>
+                            </tr>
+                            <tr>
+                                <td>Tomato Paste Concentrate & Soy Sauce</td>
+                                <td>30g / 15ml</td>
+                                <td class="font-mono">Pantry Stock</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.45</td>
+                            </tr>
+                            <tr>
+                                <td>Beef Bouillon Base & Aromatics</td>
+                                <td>2 Cubes / Thyme</td>
+                                <td class="font-mono">Negligible</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.20</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                    <div class="ledger-table font-mono">
-                        <div class="ledger-row table-head">
-                            <span>INGREDIENT ITEM</span>
-                            <span>QTY</span>
-                            <span>UNIT COST</span>
+                    <!-- Preparation Steps -->
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">2. Optimization Steps</h2>
+                    <div style="margin-top: 20px;">
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">01 /</span> <strong>Fond Generation:</strong> Pat your beef cubes completely dry. Sear them in a hot pot with vegetable oil until dark brown crusts form on the edges. Remove the beef pieces, leaving the deep brown caramelized sugar fractions (fond) on the bottom of the pot to season the upcoming vegetable base.</p>
                         </div>
-
-                        <div class="ledger-row ingredient-item" data-base-qty="1" data-unit-price="5.0" data-unit="lb" data-whole="false">
-                            <span>Beef Stew Meat</span>
-                            <span class="item-qty">1 lb</span>
-                            <span class="item-cost">$5.00</span>
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">02 /</span> <strong>Aromatic Integration:</strong> Drop your chopped vegetables into the pot to sweat. Add the tomato paste and raw pearled barley directly to the hot fat matrix, stirring for 2 minutes. Toasting the barley kernels slightly before adding liquid deepens the overall flavor profile.</p>
                         </div>
-                        <div class="ledger-row ingredient-item" data-base-qty="1" data-unit-price="0.4" data-unit="cup" data-whole="false">
-                            <span>Pearl Barley</span>
-                            <span class="item-qty">1 cup</span>
-                            <span class="item-cost">$0.40</span>
-                        </div>
-                        <div class="ledger-row ingredient-item" data-base-qty="3" data-unit-price="0.25" data-unit="carrots" data-whole="true">
-                            <span>Carrots, Chopped</span>
-                            <span class="item-qty">3 carrots</span>
-                            <span class="item-cost">$0.75</span>
-                        </div>
-                        <div class="ledger-row ingredient-item" data-base-qty="2" data-unit-price="0.2" data-unit="stalks" data-whole="true">
-                            <span>Celery, Chopped</span>
-                            <span class="item-qty">2 stalks</span>
-                            <span class="item-cost">$0.40</span>
-                        </div>
-                        <div class="ledger-row ingredient-item" data-base-qty="6" data-unit-price="0.2" data-unit="cups" data-whole="false">
-                            <span>Beef Broth</span>
-                            <span class="item-qty">6 cups</span>
-                            <span class="item-cost">$1.20</span>
-                        </div>
-
-                        <div class="ledger-total-row">
-                            <span>ESTIMATED TOTAL MATRIX:</span>
-                            <span id="total-price-display">$7.75</span>
-                        </div>
-                        <div class="ledger-total-row cost-per-serving">
-                            <span>COST PER SERVING:</span>
-                            <span id="per-serving-display" class="color-yellow">$1.29</span>
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">03 /</span> <strong>Long-Form Hydro-Softening:</strong> Return the beef pieces to the pot, pour in the bouillon water and soy sauce, and scrape the bottom clean. Cover with a tight lid, bring down to a steady low simmer, and allow the mix to process for 1 hour. The barley will swell to three times its size, naturally turning the broth into a rich, velvety gravy.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Preparation Protocol -->
-                <div class="protocol-panel">
-                    <h2 class="font-display">Preparation Protocol</h2>
-                    <ol class="protocol-list">
-                        <li><strong>Sear the Beef:</strong> Brown stew meat in batches in a Dutch oven over medium-high heat until deeply crusted, about 6 minutes per batch.</li>
-                        <li><strong>Build the Pot:</strong> Add carrots, celery, and broth to the pot, scraping up any browned bits from the bottom.</li>
-                        <li><strong>Simmer:</strong> Bring to a boil, then reduce heat and simmer covered for 60 minutes until the beef starts to soften.</li>
-                        <li><strong>Add the Barley:</strong> Stir in pearl barley and continue simmering uncovered for 30-40 minutes until barley is tender and the stew has thickened.</li>
-                    </ol>
+                <!-- RIGHT COLUMN: FINANCIAL AUDIT STICKY SIDEBAR -->
+                <div class="sticky-sidebar">
+                    <div class="receipt-widget">
+                        <div class="font-mono" style="text-align: center; font-weight: bold; letter-spacing: 0.05em; font-size: 1.1rem;">SAVERBITES AUDIT TICKET</div>
+                        <div style="border-bottom: 2px dashed #141312; margin: 15px 0;"></div>
+                        
+                        <div class="font-mono" style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 8px;">
+                            <span>ITEM: POT_BEEF_BARLEY_05</span>
+                            <span>QTY: 4 SERVINGS</span>
+                        </div>
+                        
+                        <div style="border-bottom: 1px solid #E0E0E0; margin: 10px 0;"></div>
+                        
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>01/ TOTAL YIELD CAP</span>
+                            <span style="font-weight: 600;">$5.85</span>
+                        </div>
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>02/ COST PER SERVING</span>
+                            <span style="font-weight: 600; color: #00CC44;">$1.46</span>
+                        </div>
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>03/ ACTIVE BUILD TIME</span>
+                            <span>70 MIN</span>
+                        </div>
+                        
+                        <div style="border-bottom: 2px dashed #141312; margin: 15px 0;"></div>
+                        <div class="font-mono" style="text-align: center; letter-spacing: 0.15em; font-size: 0.9rem; opacity: 0.7;">|||| |||||| ||| ||||| ||</div>
+                    </div>
                 </div>
+
             </div>
-        </article>
+        </section>
     </main>
 
     <footer class="footer" style="background-color: #141312; color: #fff; padding: 40px 20px; text-align: center;">
         <p>&copy; 2026 SaverBites. All rights reserved.</p>
         <div style="margin-top: 15px; font-size: 0.9rem;">
-            <a href="../about.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">About</a> |
-            <a href="../blog.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Blog</a> |
-            <a href="../contact.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Contact</a> |
-            <a href="../privacy.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
-            <a href="../terms.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+            <a href="../about.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">About</a> |
+            <a href="../blog.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Blog</a> |
+            <a href="../contact.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Contact</a> |
+            <a href="../privacy.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
+            <a href="../terms.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Terms of Service</a>
         </div>
     </footer>
 
-    <!-- Micro-Calculator Logic -->
-    <script>
-        const baseServings = 6;
-        let currentServings = 6;
-
-        const minusBtn = document.getElementById('minus-btn');
-        const plusBtn = document.getElementById('plus-btn');
-        const servingDisplay = document.getElementById('serving-multiplier');
-        const totalDisplay = document.getElementById('total-price-display');
-        const perServingDisplay = document.getElementById('per-serving-display');
-        const rows = document.querySelectorAll('.ingredient-item');
-
-        function formatQty(qty, isWhole) {
-            if (isWhole) return Math.round(qty).toString();
-            const rounded = Math.round(qty * 100) / 100;
-            // show 1 decimal unless it needs 2 for accuracy
-            const oneDecimal = Math.round(qty * 10) / 10;
-            return (Math.abs(oneDecimal - rounded) < 0.001) ? oneDecimal.toString() : rounded.toString();
-        }
-
-        function updateLedger() {
-            let newTotal = 0;
-            const factor = currentServings / baseServings;
-
-            servingDisplay.textContent = currentServings;
-
-            rows.forEach(row => {
-                const baseQty = parseFloat(row.getAttribute('data-base-qty'));
-                const unitPrice = parseFloat(row.getAttribute('data-unit-price'));
-                const unit = row.getAttribute('data-unit');
-                const isWhole = row.getAttribute('data-whole') === 'true';
-
-                const calculatedQty = baseQty * factor;
-                const calculatedCost = calculatedQty * unitPrice;
-                newTotal += calculatedCost;
-
-                const qtySpan = row.querySelector('.item-qty');
-                const costSpan = row.querySelector('.item-cost');
-
-                qtySpan.textContent = `${formatQty(calculatedQty, isWhole)} ${unit}`;
-                costSpan.textContent = `$${calculatedCost.toFixed(2)}`;
-            });
-
-            totalDisplay.textContent = `$${newTotal.toFixed(2)}`;
-            perServingDisplay.textContent = `$${(newTotal / currentServings).toFixed(2)}`;
-        }
-
-        plusBtn.addEventListener('click', () => { currentServings += 1; updateLedger(); });
-        minusBtn.addEventListener('click', () => { if (currentServings > 1) { currentServings -= 1; updateLedger(); } });
-    </script>
 </body>
 </html>
