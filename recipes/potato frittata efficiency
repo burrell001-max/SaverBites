@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Matrix: Potato Frittata — SaverBites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .recipe-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; margin-top: 40px; }
+        @media (max-width: 768px) { .recipe-layout { grid-template-columns: 1fr; } }
+        
+        .audit-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.95rem; }
+        .audit-table th { background-color: #141312; color: #FFFFFF; text-align: left; padding: 12px; font-weight: 600; }
+        .audit-table td { padding: 12px; border-bottom: 1px solid #E0E0E0; }
+        .audit-table tr:hover { background-color: #F5F4F0; }
+
+        .step-block { margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px dashed #E0E0E0; }
+        .step-num { font-weight: bold; color: #00CC44; margin-right: 10px; }
+
+        .sticky-sidebar { position: sticky; top: 40px; }
+        .receipt-widget { background: #FFFFFF; color: #141312; border: 2px solid #141312; box-shadow: 5px 5px 0px #141312; padding: 25px; }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">SAVER<span class="logo-accent" style="color: #00CC44;">BITES</span></a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../pasta.html" class="nav-link">Pasta Dishes</a>
+                <a href="../onepot.html" class="nav-link">One Pot Meals</a>
+                <a href="../vegetarian.html" class="nav-link">Vegetarian</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="background-color: #FFFFFF;">
+        <section class="section container" style="padding: 40px 20px;">
+            <a href="../vegetarian.html" style="color: #00CC44; text-decoration: none; font-weight: bold; font-size: 0.85rem;" class="font-mono">← BACK TO VEGETARIAN INDEX</a>
+            
+            <div class="recipe-layout">
+                
+                <!-- LEFT COLUMN: CONTENT & TABLES -->
+                <div>
+                    <span class="hero-badge font-mono" style="border-color: #141312; color: #141312; margin-bottom: 15px;">AUDIT ID: VEG_FRIT_02</span>
+                    <h1 style="font-family: 'Fraunces', serif; font-size: 2.5rem; margin: 10px 0; color: #141312;">Potato Frittata Matrix</h1>
+                    <p style="color: #555; line-height: 1.7; font-size: 1.1rem;">A framework for optimizing egg-based yields. By interlocking thinly sliced tuber starch channels directly with fluid egg lipids, we form a dense structural cake that doubles the volume threshold of a standard scramble at a fraction of the unit cost.</p>
+
+                    <!-- Ingredient Breakdown Ledger -->
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">1. Component Unit Ledger</h2>
+                    <table class="audit-table">
+                        <thead>
+                            <tr class="font-mono" style="font-size: 0.8rem;">
+                                <th>INGREDIENT COMPONENT</th>
+                                <th>QUANTITY USED</th>
+                                <th>UNIT COST MATRIX</th>
+                                <th>TOTAL COST</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Large Whole Eggs</td>
+                                <td>6 Units</td>
+                                <td class="font-mono">$0.25 / unit</td>
+                                <td class="font-mono" style="font-weight: 600;">$1.50</td>
+                            </tr>
+                            <tr>
+                                <td>Russet Potatoes (Thinly Sliced)</td>
+                                <td>400g (2 Medium)</td>
+                                <td class="font-mono">$0.0016 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.64</td>
+                            </tr>
+                            <tr>
+                                <td>Yellow Onion (Halved & Sliced)</td>
+                                <td>150g (1 Medium)</td>
+                                <td class="font-mono">$0.0014 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.21</td>
+                            </tr>
+                            <tr>
+                                <td>Vegetable Cooking Oil</td>
+                                <td>30ml</td>
+                                <td class="font-mono">$0.003 / ml</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.09</td>
+                            </tr>
+                            <tr>
+                                <td>Sea Salt & Fine Black Pepper</td>
+                                <td>8g</td>
+                                <td class="font-mono">Pantry Stock</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.05</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Preparation Steps -->
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">2. Optimization Steps</h2>
+                    <div style="margin-top: 20px;">
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">01 /</span> <strong>Starch Foundation Layering:</strong> Scrub and slice potatoes into thin 1/8-inch disks. Heat oil in a non-stick skillet and layer the potatoes and onions. Fry over medium heat for 12 minutes, turning them gently so they soften and lightly brown without completely breaking apart.</p>
+                        </div>
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">02 /</span> <strong>Egg Matrix Injection:</strong> Crack eggs into a bowl, whisk thoroughly with salt and pepper, and pour evenly over the pan potato assembly. Tap the pan against the burner so the raw egg runs down through the cracks, creating a solid, interconnected structure.</p>
+                        </div>
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">03 /</span> <strong>Thermal Set Completion:</strong> Drop the burner heat to its absolute lowest threshold, cover with a flat lid, and let steam for 10 minutes. If your pan is oven-safe, you can slide it under a broiler for 2 minutes to brown the top. Slice clean wedge segments directly from the skillet matrix.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: FINANCIAL AUDIT STICKY SIDEBAR -->
+                <div class="sticky-sidebar">
+                    <div class="receipt-widget">
+                        <div class="font-mono" style="text-align: center; font-weight: bold; letter-spacing: 0.05em; font-size: 1.1rem;">SAVERBITES AUDIT TICKET</div>
+                        <div style="border-bottom: 2px dashed #141312; margin: 15px 0;"></div>
+                        
+                        <div class="font-mono" style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 8px;">
+                            <span>ITEM: VEG_FRIT_02</span>
+                            <span>QTY: 4 SERVINGS</span>
+                        </div>
+                        
+                        <div style="border-bottom: 1px solid #E0E0E0; margin: 10px 0;"></div>
+                        
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>01/ TOTAL YIELD CAP</span>
+                            <span style="font-weight: 600;">$2.49</span>
+                        </div>
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>02/ COST PER SERVING</span>
+                            <span style="font-weight: 600; color: #00CC44;">$0.62</span>
+                        </div>
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>03/ ACTIVE BUILD TIME</span>
+                            <span>25 MIN</span>
+                        </div>
+                        
+                        <div style="border-bottom: 2px dashed #141312; margin: 15px 0;"></div>
+                        <div class="font-mono" style="text-align: center; letter-spacing: 0.15em; font-size: 0.9rem; opacity: 0.7;">|||| |||||| ||| ||||| ||</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="background-color: #141312; color: #fff; padding: 40px 20px; text-align: center;">
+        <p>&copy; 2026 SaverBites. All rights reserved.</p>
+        <div style="margin-top: 15px; font-size: 0.9rem;">
+            <a href="../about.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">About</a> |
+            <a href="../blog.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Blog</a> |
+            <a href="../contact.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Contact</a> |
+            <a href="../privacy.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
+            <a href="../terms.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+        </div>
+    </footer>
+
+</body>
+</html>
