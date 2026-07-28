@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZBXY9G1M4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FZBXY9G1M4');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasta Blueprint Matrix — SaverBites</title>
+    <title>Pasta Dishes — SaverBites</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+
     <style>
-        .grid-matrix { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; margin-top: 30px; }
-        .recipe-card { background: #FFFFFF; border: 2px solid #141312; box-shadow: 4px 4px 0px #141312; padding: 20px; transition: transform 0.2s; }
-        .recipe-card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0px #141312; }
-        .card-meta { display: flex; justify-content: space-between; font-size: 0.8rem; border-bottom: 1px solid #E0E0E0; padding-bottom: 8px; margin-bottom: 12px; }
-        .card-btn { display: block; text-align: center; background: #141312; color: #FFFFFF; padding: 10px; text-decoration: none; font-weight: 600; margin-top: 15px; font-size: 0.9rem; }
-        .card-btn:hover { background: #00CC44; }
+        :root {
+            --accent-color: #00CC44;
+            --banner-bg: #141312;
+            --banner-text: #FFFFFF;
+            --bubble-bg-default: #F5F4F0;
+            --text-dark: #141312;
+            --site-bg: #FFFFFF;
+        }
+        body, main, .section { background-color: var(--site-bg) !important; color: var(--text-dark) !important; }
+        .site-header { background-color: #FFFFFF !important; border-bottom: 1px solid #E0E0E0 !important; }
+        .logo { color: var(--text-dark) !important; }
+        .nav-link { color: #4A4A4A !important; }
+        .nav-link.active { color: var(--text-dark) !important; font-weight: bold; }
+        .card-title-link { color: var(--text-dark); text-decoration: none; }
+        .card-title-link:hover { color: var(--accent-color); }
+        .card-link { display: block; margin-top: 15px; color: var(--accent-color); font-weight: bold; text-decoration: none; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em; }
     </style>
 </head>
 <body>
 
     <header class="site-header">
         <div class="header-container">
-            <a href="index.html" class="logo">SAVER<span class="logo-accent" style="color: #00CC44;">BITES</span></a>
+            <a href="index.html" class="logo">SAVER<span class="logo-accent" style="color: var(--accent-color);">BITES</span></a>
             <nav class="nav">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="pasta.html" class="nav-link active">Pasta Dishes</a>
@@ -31,47 +50,282 @@
         </div>
     </header>
 
-    <main class="container" style="padding: 40px 20px;">
-        <span class="hero-badge font-mono" style="color: #141312; border-color: #141312;">INDEX LOG // CATEGORY: PASTA</span>
-        <h1 style="font-family: 'Fraunces', serif; font-size: 2.5rem; margin-top: 10px;">Starch & Emulsification Ledgers</h1>
-        <p style="color: #555; max-width: 600px; line-height: 1.6;">High-yield carbohydrate bases optimized via precise fluid bindings. Click on any blueprint profile below to analyze the ingredient breakdown, cost ledger, and preparation steps.</p>
+    <main>
+        <section class="section container" style="padding-top: 40px;">
+            <span class="hero-badge font-mono" style="border-color: var(--text-dark); color: var(--text-dark);">INDEX LOG // CATEGORY: PASTA</span>
+            <h1 style="font-family: 'Fraunces', serif; font-size: 2.5rem; margin: 15px 0 10px 0;">Starch & Emulsification Ledgers</h1>
+            <p class="hero-sub" style="color: #4A4A4A; max-width: 700px;">High-yield carbohydrate bases optimized via precise fluid bindings. Every noodle dish on SaverBites, audited down to the cent.</p>
 
-        <div class="grid-matrix">
-            
-            <!-- Card 1 -->
-            <div class="recipe-card">
-                <div class="card-meta font-mono"><span>ID: PST_AOLIO_01</span> <span style="color: #00CC44;">$0.32/SERV</span></div>
-                <h3 style="font-family: 'Fraunces', serif; font-size: 1.3rem; margin: 5px 0;">Garlic & Oil Pasta</h3>
-                <p style="font-size: 0.9rem; color: #666; line-height: 1.5; margin-bottom: 10px;">Low-cost lipid extraction utilizing high-emulsion starchy cooking water formulas.</p>
-                <a href="recipes/garlic-oil-pasta.html" class="card-btn font-mono">LAUNCH AUDIT</a>
+            <div class="recipe-grid" style="margin-top: 30px;">
+                <div class="recipe-card" data-categories="pasta one-pot under-10 quick">
+                    <div class="card-img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&w=600&q=80" alt="Garlic Parmesan Butter Noodles Matrix">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">PASTA / ONE-POT</span>
+                        <h3><a href="./recipes/garlic-parmesan-noodles.html" class="card-title-link">Garlic Parmesan Butter Noodles Matrix</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.84</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$3.36</span></div>
+                        </div>
+                        <a href="./recipes/garlic-parmesan-noodles.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta under-10 quick">
+                    <div class="card-img-placeholder">
+                        <img src="./images/carbonara-hard-cheese-guanciale.jpg" alt="The $0.62 Carbonara: Hard Cheese vs. Legit Guanciale Pricing">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">PASTA / PROTEIN</span>
+                        <h3><a href="./recipes/carbonara-hard-cheese-guanciale.html" class="card-title-link">The $0.62 Carbonara: Hard Cheese vs. Legit Guanciale Pricing</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.78</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$3.10</span></div>
+                        </div>
+                        <a href="./recipes/carbonara-hard-cheese-guanciale.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta under-10 quick">
+                    <div class="card-img-placeholder">
+                        <img src="./images/cacio-e-pepe-blueprint.webp" alt="The Cacio e Pepe Blueprint: Mastering Emulsification to Save on Sauce">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">TECHNIQUE / VALUE</span>
+                        <h3><a href="./recipes/cacio-e-pepe-blueprint.html" class="card-title-link">The Cacio e Pepe Blueprint: Mastering Emulsification to Save on Sauce</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.62</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$2.50</span></div>
+                        </div>
+                        <a href="./recipes/cacio-e-pepe-blueprint.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta under-10">
+                    <div class="card-img-placeholder">
+                        <img src="./images/baked-ziti-efficiency.jpg" alt="Baked Ziti Efficiency: How to Layer Cheaper Ricotta Substitutes Without Losing Creaminess">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">BAKING / DAIRY</span>
+                        <h3><a href="./recipes/baked-ziti-efficiency.html" class="card-title-link">Baked Ziti Efficiency: How to Layer Cheaper Ricotta Substitutes Without Losing Creaminess</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.88</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$5.28</span></div>
+                        </div>
+                        <a href="./recipes/baked-ziti-efficiency.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta quick under-10">
+                    <div class="card-img-placeholder">
+                        <img src="./images/aglio-e-olio-pantry-staples.jpg" alt="Aglio e Olio: Maximizing Cheap Pantry Staples for Maximum Garlic Flavor">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">STAPLES / SPEED</span>
+                        <h3><a href="./recipes/aglio-e-olio-pantry-staples.html" class="card-title-link">Aglio e Olio: Maximizing Cheap Pantry Staples for Maximum Garlic Flavor</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.67</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$2.66</span></div>
+                        </div>
+                        <a href="./recipes/aglio-e-olio-pantry-staples.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta vegetarian under-10">
+                    <div class="card-img-placeholder">
+                        <img src="./images/brown-butter-sage-matrix.jpg" alt="Brown Butter & Sage Matrix: High-End Flavors on a Pennies Budget">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">PANTRY / FLAVOR</span>
+                        <h3><a href="./recipes/brown-butter-sage-matrix.html" class="card-title-link">Brown Butter & Sage Matrix: High-End Flavors on a Pennies Budget</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.98</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$3.92</span></div>
+                        </div>
+                        <a href="./recipes/brown-butter-sage-matrix.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta under-10">
+                    <div class="card-img-placeholder">
+                        <img src="./images/budget-pasta-salad-matrix.jpg" alt="Budget Pasta Salad Matrix: Modular Cold Dishes for Hot Summer Weeks">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">MEAL PREP / COLD</span>
+                        <h3><a href="./recipes/budget-pasta-salad-matrix.html" class="card-title-link">Budget Pasta Salad Matrix: Modular Cold Dishes for Hot Summer Weeks</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.84</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$5.06</span></div>
+                        </div>
+                        <a href="./recipes/budget-pasta-salad-matrix.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta quick under-10">
+                    <div class="card-img-placeholder">
+                        <img src="./images/bulk-pasta-boxed-vs-fresh.jpg" alt="Bulk Pasta Audits: Gram-for-Gram Cost Analysis of Boxed vs. Fresh">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">BULK / METRICS</span>
+                        <h3><a href="./recipes/bulk-pasta-boxed-vs-fresh.html" class="card-title-link">Bulk Pasta Audits: Gram-for-Gram Cost Analysis of Boxed vs. Fresh</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.39</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$1.55</span></div>
+                        </div>
+                        <a href="./recipes/bulk-pasta-boxed-vs-fresh.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta quick under-10">
+                    <div class="card-img-placeholder">
+                        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3.5rem;background-color:#EFECE6;">🍝</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">PASTA / DAIRY-STRETCH</span>
+                        <h3><a href="./recipes/creamy-tomato-pasta.html" class="card-title-link">Creamy Tomato Pasta Matrix</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.44</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$1.79</span></div>
+                        </div>
+                        <a href="./recipes/creamy-tomato-pasta.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta quick under-10">
+                    <div class="card-img-placeholder">
+                        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3.5rem;background-color:#EFECE6;">🧄</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">PASTA / PANTRY</span>
+                        <h3><a href="./recipes/garlic-oil-pasta.html" class="card-title-link">Garlic & Oil Pasta Blueprint</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.32</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$1.29</span></div>
+                        </div>
+                        <a href="./recipes/garlic-oil-pasta.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta vegetarian">
+                    <div class="card-img-placeholder">
+                        <img src="./images/lentil-bolognese.jpg" alt="Lentil Bolognese: Replacing Ground Beef Without Losing the Umami">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">LEGUMES / SAUCE</span>
+                        <h3><a href="./recipes/lentil-bolognese.html" class="card-title-link">Lentil Bolognese: Replacing Ground Beef Without Losing the Umami</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$1.93</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$7.70</span></div>
+                        </div>
+                        <a href="./recipes/lentil-bolognese.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta one-pot quick under-10">
+                    <div class="card-img-placeholder">
+                        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3.5rem;background-color:#EFECE6;">🍝</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">PASTA / ONE-POT</span>
+                        <h3><a href="./recipes/one-pan-pasta.html" class="card-title-link">One-Pan Absorption Matrix</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.42</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$1.68</span></div>
+                        </div>
+                        <a href="./recipes/one-pan-pasta.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta vegetarian quick under-10">
+                    <div class="card-img-placeholder">
+                        <img src="./images/peanut-butter-noodle-sauce.jpg" alt="Peanut Butter Noodle Sauce: A Pantry Staple That Beats Bottled Dressing">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">PANTRY / SAUCE</span>
+                        <h3><a href="./recipes/peanut-butter-noodle-sauce.html" class="card-title-link">Peanut Butter Noodle Sauce: A Pantry Staple That Beats Bottled Dressing</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.47</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$1.90</span></div>
+                        </div>
+                        <a href="./recipes/peanut-butter-noodle-sauce.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta vegetarian under-10">
+                    <div class="card-img-placeholder">
+                        <img src="./images/red-sauce-audit-whole-tomatoes.jpg" alt="The Red Sauce Audit: Why Whole Peeled Tomatoes Beat Jarred Marinara Every Time">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">SAUCE / SOURCING</span>
+                        <h3><a href="./recipes/red-sauce-audit-whole-tomatoes.html" class="card-title-link">The Red Sauce Audit: Why Whole Peeled Tomatoes Beat Jarred Marinara Every Time</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.72</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$2.87</span></div>
+                        </div>
+                        <a href="./recipes/red-sauce-audit-whole-tomatoes.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta vegetarian quick under-10">
+                    <div class="card-img-placeholder">
+                        <img src="./images/stovetop-mac-and-cheese.jpg" alt="Stovetop Mac & Cheese: Skipping the Oven to Cut Your Energy Line Item">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">DAIRY / ENERGY</span>
+                        <h3><a href="./recipes/stovetop-mac-and-cheese.html" class="card-title-link">Stovetop Mac & Cheese: Skipping the Oven to Cut Your Energy Line Item</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.99</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$3.97</span></div>
+                        </div>
+                        <a href="./recipes/stovetop-mac-and-cheese.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta one-pot">
+                    <div class="card-img-placeholder">
+                        <img src="./images/stretching-the-protein-bolognese.jpg" alt="Stretching the Protein: Optimizing 1/2 Pound of Beef Across a Gallon of Bolognese">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">OPTIMIZATION / MEAT</span>
+                        <h3><a href="./recipes/stretching-the-protein-bolognese.html" class="card-title-link">Stretching the Protein: Optimizing 1/2 Pound of Beef Across a Gallon of Bolognese</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$1.01</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$6.03</span></div>
+                        </div>
+                        <a href="./recipes/stretching-the-protein-bolognese.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
+                <div class="recipe-card" data-categories="pasta vegetarian quick under-10">
+                    <div class="card-img-placeholder">
+                        <img src="./images/zero-waste-pesto.jpg" alt="The Zero-Waste Pesto: Swapping Pine Nuts for Sunflower Seeds and Scraps">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category font-mono">WASTE / GREENS</span>
+                        <h3><a href="./recipes/zero-waste-pesto.html" class="card-title-link">The Zero-Waste Pesto: Swapping Pine Nuts for Sunflower Seeds and Scraps</a></h3>
+                        <div class="mini-receipt font-mono">
+                            <div class="mini-row"><span>PER SERVING:</span><span class="bold">$0.91</span></div>
+                            <div class="mini-row"><span>TOTAL COST:</span><span>$3.65</span></div>
+                        </div>
+                        <a href="./recipes/zero-waste-pesto.html" class="card-link">View Full Audit →</a>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- Card 2 -->
-            <div class="recipe-card">
-                <div class="card-meta font-mono"><span>ID: PST_CRMTOM_02</span> <span style="color: #00CC44;">$0.44/SERV</span></div>
-                <h3 style="font-family: 'Fraunces', serif; font-size: 1.3rem; margin: 5px 0;">Creamy Tomato Pasta</h3>
-                <p style="font-size: 0.9rem; color: #666; line-height: 1.5; margin-bottom: 10px;">A milk and roux stretching architecture bypassing luxury heavy cream expenses.</p>
-                <a href="recipes/creamy-tomato-pasta.html" class="card-btn font-mono">LAUNCH AUDIT</a>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="recipe-card">
-                <div class="card-meta font-mono"><span>ID: PST_ONEPAN_03</span> <span style="color: #00CC44;">$0.42/SERV</span></div>
-                <h3 style="font-family: 'Fraunces', serif; font-size: 1.3rem; margin: 5px 0;">One-Pan Absorption</h3>
-                <p style="font-size: 0.9rem; color: #666; line-height: 1.5; margin-bottom: 10px;">Dry noodles cooked completely inside tomato juices to capture 100% loose starch bonds.</p>
-                <a href="recipes/one-pan-pasta.html" class="card-btn font-mono">LAUNCH AUDIT</a>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="recipe-card">
-                <div class="card-meta font-mono"><span>ID: PST_BAKEDZ_04</span> <span style="color: #00CC44;">$0.89/SERV</span></div>
-                <h3 style="font-family: 'Fraunces', serif; font-size: 1.3rem; margin: 5px 0;">Baked Ziti Efficiency</h3>
-                <p style="font-size: 0.9rem; color: #666; line-height: 1.5; margin-bottom: 10px;">Strategic protein-stretching allocation using single-layer melted cheese metrics.</p>
-                <a href="recipes/baked-ziti-efficiency.html" class="card-btn font-mono">LAUNCH AUDIT</a>
-            </div>
-
-        </div>
+        </section>
     </main>
+
+    <footer class="footer" style="background-color: #141312; color: #fff; padding: 40px 20px; text-align: center;">
+        <p>&copy; 2026 SaverBites. All rights reserved.</p>
+        <div style="margin-top: 15px; font-size: 0.9rem;">
+            <a href="about.html" style="color: var(--accent-color); margin: 0 10px; text-decoration: none;">About</a> |
+            <a href="blog.html" style="color: var(--accent-color); margin: 0 10px; text-decoration: none;">Blog</a> |
+            <a href="contact.html" style="color: var(--accent-color); margin: 0 10px; text-decoration: none;">Contact</a> |
+            <a href="privacy.html" style="color: var(--accent-color); margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
+            <a href="terms.html" style="color: var(--accent-color); margin: 0 10px; text-decoration: none;">Terms of Service</a>
+        </div>
+    </footer>
 
 </body>
 </html>
