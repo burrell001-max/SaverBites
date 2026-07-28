@@ -3,17 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crispy Lemon Pepper Chicken Thighs — SaverBites</title>
+    <title>Audit Matrix: Lemon Pepper Chicken — SaverBites</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .recipe-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; margin-top: 40px; }
+        @media (max-width: 768px) { .recipe-layout { grid-template-columns: 1fr; } }
+        
+        .audit-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.95rem; }
+        .audit-table th { background-color: #141312; color: #FFFFFF; text-align: left; padding: 12px; font-weight: 600; }
+        .audit-table td { padding: 12px; border-bottom: 1px solid #E0E0E0; }
+        .audit-table tr:hover { background-color: #F5F4F0; }
+
+        .step-block { margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px dashed #E0E0E0; }
+        .step-num { font-weight: bold; color: #00CC44; margin-right: 10px; }
+
+        .sticky-sidebar { position: sticky; top: 40px; }
+      .receipt-widget { background: #FFFFFF; color: #141312; border: 2px solid #141312; box-shadow: 5px 5px 0px #141312; padding: 25px; }
+
+        .faq-item { margin-bottom: 18px; }
+        .faq-item summary { cursor: pointer; font-weight: 600; color: #141312; padding: 4px 0; }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "name": "Lemon Pepper Chicken Matrix",
+      "image": ["https://burrell001-max.github.io/SaverBites/images/lemon-pepper-chicken.jpg"],
+      "description": "Bone-in, skin-on chicken thighs pan-seared to render their own fat, finished with a fresh lemon and cracked pepper pan sauce.",
+      "recipeCategory": "Poultry",
+      "recipeCuisine": "American",
+      "keywords": "budget chicken thighs, lemon pepper chicken, crispy chicken skin",
+      "recipeYield": "2 servings",
+      "totalTime": "PT30M",
+      "recipeIngredient": [
+        "500g skin-on, bone-in chicken thighs",
+        "2 fresh lemons, zested and juiced",
+        "5g coarsely cracked black pepper",
+        "30g all-purpose flour",
+        "10g garlic powder and sea salt"
+      ],
+      "recipeInstructions": [
+        { "@type": "HowToStep", "name": "Dredge & Render", "text": "Debone chicken thighs if preferred, reserving bones for stock. Season and lightly dredge the skin in seasoned flour. Place skin-side down in a cold skillet and gradually raise the heat to render the fat without added oil." },
+        { "@type": "HowToStep", "name": "Bloom the Pepper", "text": "Once the skin is crisp and golden, flip to cook through, then remove the chicken to rest. Add the cracked black pepper to the hot rendered fat to bloom the aromatics." },
+        { "@type": "HowToStep", "name": "Deglaze & Glaze", "text": "Pour lemon juice and zest into the skillet, scraping up the browned bits. Simmer about 90 seconds until reduced to a glaze, then spoon over the chicken." }
+      ],
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1 serving"
+      }
+    }
+    </script>
 </head>
 <body>
 
     <header class="site-header">
         <div class="header-container">
-            <a href="../index.html" class="logo">SAVER<span class="logo-accent">BITES</span></a>
+            <a href="../index.html" class="logo">SAVER<span class="logo-accent" style="color: #00CC44;">BITES</span></a>
             <nav class="nav">
                 <a href="../index.html" class="nav-link">Home</a>
                 <a href="../pasta.html" class="nav-link">Pasta Dishes</a>
@@ -23,140 +72,150 @@
         </div>
     </header>
 
-    <main class="container section">
-        <article class="recipe-container">
-            <header class="recipe-post-header">
-                <span class="card-category font-mono">POULTRY / BUDGET</span>
-                <h1>Crispy Lemon Pepper Chicken Thighs</h1>
-                <p class="recipe-intro">Bone-in, skin-on thighs render their own fat in a cold skillet, giving you a crackling crust without a drop of extra oil. Zested fresh lemon beats bottled juice for real brightness at almost no added cost.</p>
-            </header>
+    <main style="background-color: #FFFFFF;">
+        <section class="section container" style="padding: 40px 20px;">
+            <a href="../onepot.html" style="color: #00CC44; text-decoration: none; font-weight: bold; font-size: 0.85rem;" class="font-mono">← BACK TO INDEX</a>
+            
+            <div class="recipe-layout">
+                
+                <!-- LEFT COLUMN: CONTENT & TABLES -->
+                <div>
+                    <span class="hero-badge font-mono" style="border-color: #141312; color: #141312; margin-bottom: 15px;">AUDIT ID: CHICK_LEMON_01</span>
+                    <h1 style="font-family: 'Fraunces', serif; font-size: 2.5rem; margin: 10px 0; color: #141312;">Lemon Pepper Chicken Matrix</h1>
+                    <p style="color: #555; line-height: 1.7; font-size: 1.1rem;">An optimization strategy targeting bone-in, skin-on chicken assets. By manually processing the cuts and building a rustic pan reduction with fresh citrus acid, we generate restaurant-quality flavor metrics while bypassing high boneless retail markups.</p>
 
-            <div class="recipe-blueprint-grid">
-                <!-- Ingredients Ledger Panel -->
-                <div class="ledger-panel">
-                    <div class="ledger-header">
-                        <h2 class="font-mono">INGREDIENT UNIT LEDGER</h2>
-                        <div class="serving-control font-mono">
-                            <span>SERVINGS:</span>
-                            <button class="serve-btn" id="minus-btn">-</button>
-                            <span id="serving-multiplier" class="bold">4</span>
-                            <button class="serve-btn" id="plus-btn">+</button>
+                    <p style="color: #444; line-height: 1.7; margin-top: 20px;">Boneless, skinless chicken breast is one of the most reliably overpriced items in the meat case, largely because you're paying someone else to do the butchering for you. Bone-in, skin-on thighs sit at a fraction of the per-pound cost, and the parts everyone trims away — the skin and the bones — are exactly what makes this dish work. The skin renders its own cooking fat, so there's no oil line item at all, and if you save the bones afterward you've got the start of a free stock. This is less a recipe than a small argument for buying the "less convenient" cut and doing 90 seconds of extra prep in exchange for real savings.</p>
+
+                    <p style="color: #444; line-height: 1.7; margin-top: 16px;">The most common way this dish goes wrong on a budget is impatience with the rendering step. People crank the heat immediately, the skin seizes and sticks before it's had a chance to release its fat, and they end up reaching for a splash of oil to unstick it — which defeats the entire cost advantage of starting with skin-on thighs in the first place. The fix costs nothing but a few extra minutes: start the skillet cold, and let the heat come up gradually with the chicken already in it.</p>
+
+                    <!-- Ingredient Breakdown Ledger -->
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">1. Component Unit Ledger</h2>
+                    <table class="audit-table">
+                        <thead>
+                            <tr class="font-mono" style="font-size: 0.8rem;">
+                                <th>INGREDIENT COMPONENT</th>
+                                <th>QUANTITY USED</th>
+                                <th>UNIT COST MATRIX</th>
+                                <th>TOTAL COST</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Skin-On, Bone-In Chicken Thighs</td>
+                                <td>500g</td>
+                                <td class="font-mono">$0.005 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$2.50</td>
+                            </tr>
+                            <tr>
+                                <td>Fresh Lemons (Zest & Juice)</td>
+                                <td>2 Units</td>
+                                <td class="font-mono">$0.40 / unit</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.80</td>
+                            </tr>
+                            <tr>
+                                <td>Coarsely Cracked Black Pepper</td>
+                                <td>5g</td>
+                                <td class="font-mono">$0.015 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.07</td>
+                            </tr>
+                            <tr>
+                                <td>All-Purpose Flour Substrate</td>
+                                <td>30g</td>
+                                <td class="font-mono">$0.001 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.03</td>
+                            </tr>
+                            <tr>
+                                <td>Garlic Powder & Sea Salt</td>
+                                <td>10g</td>
+                                <td class="font-mono">Pantry Stock</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Preparation Steps -->
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">2. Optimization Steps</h2>
+                    <div style="margin-top: 20px;">
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">01 /</span> <strong>Dredge & Render:</strong> Debone chicken thighs if preferred (reserve bones for stock yields). Season and lightly dredge the skin in a thin layer of seasoned flour. Place skin-side down in a <em>cold</em> skillet — this is the step people rush — and gradually ramp the heat up over medium-low for 8-10 minutes to render out the natural lipids without adding extra cooking oils. You'll hear the sizzle build slowly rather than hit all at once; that gradual build is what keeps the skin from sticking or tearing when you eventually flip it.</p>
+                        </div>
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">02 /</span> <strong>Piperine Saturation:</strong> Once the chicken skin is completely crisp, deep golden-brown, and releases easily from the pan on its own, flip the thighs to cook through — another 6-8 minutes depending on thickness, or until a thermometer reads 165°F at the thickest part. Remove the chicken to rest, leaving the hot rendered chicken fat behind. Drop your coarsely cracked black pepper directly into this hot fat matrix and let it sizzle for about 20 seconds to bloom the aromatic oil compounds before moving to the next step.</p>
+                        </div>
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">03 /</span> <strong>Deglaze & Glaze:</strong> Pour fresh lemon juice and lemon zest straight into the skillet, scraping up the browned flour particles stuck to the pan bottom with a wooden spoon — that fond is concentrated flavor you'd otherwise throw away. Simmer for 90 seconds until the acid reduces into a bright, velvety glaze that coats the back of a spoon. Spoon directly over the crisp chicken assemblies and serve immediately while the skin is still audibly crackling.</p>
                         </div>
                     </div>
 
-                    <div class="ledger-table font-mono">
-                        <div class="ledger-row table-head">
-                            <span>INGREDIENT ITEM</span>
-                            <span>QTY</span>
-                            <span>UNIT COST</span>
-                        </div>
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">3. Why the Numbers Work</h2>
+                    <p style="color: #444; line-height: 1.7;">The chicken itself accounts for roughly 70% of the total cost here, and that's the one line item you have direct control over. Bone-in, skin-on thighs typically run less than half the per-pound price of boneless, skinless breast at most grocery stores, and you're not losing quality by choosing them — the skin and bone actually add flavor and moisture that lean breast meat doesn't have. Everything else on this ledger is close to free: two lemons, a spoon of flour, and pantry seasoning barely move the total past a dollar combined. At $1.75 per serving, this lands well under what a rotisserie chicken portion or a fast-casual chicken plate would cost, with a pan sauce built entirely from what would otherwise be food waste.</p>
 
-                        <div class="ledger-row ingredient-item" data-base-qty="4" data-unit-price="1.675" data-unit="thighs" data-whole="true">
-                            <span>Bone-in, Skin-on Chicken Thighs</span>
-                            <span class="item-qty">4 thighs</span>
-                            <span class="item-cost">$6.70</span>
-                        </div>
-                        <div class="ledger-row ingredient-item" data-base-qty="1" data-unit-price="0.5" data-unit="large lemon" data-whole="true">
-                            <span>Lemon, Zested & Juiced</span>
-                            <span class="item-qty">1 large lemon</span>
-                            <span class="item-cost">$0.50</span>
-                        </div>
-                        <div class="ledger-row ingredient-item" data-base-qty="1.5" data-unit-price="0.2" data-unit="tbsp" data-whole="false">
-                            <span>Lemon Pepper Seasoning</span>
-                            <span class="item-qty">1.5 tbsp</span>
-                            <span class="item-cost">$0.30</span>
-                        </div>
-                        <div class="ledger-row ingredient-item" data-base-qty="1" data-unit-price="0.18" data-unit="tbsp" data-whole="false">
-                            <span>Olive Oil or Butter</span>
-                            <span class="item-qty">1 tbsp</span>
-                            <span class="item-cost">$0.18</span>
-                        </div>
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">4. Storage & Leftovers</h2>
+                    <p style="color: #444; line-height: 1.7;">Refrigerate in an airtight container for up to 3 days. The skin won't stay crisp after refrigeration — that's just physics, not a sign anything went wrong — but reheating skin-side down in a dry skillet over medium heat for a few minutes brings back most of the texture, far better than a microwave will. If you deboned the thighs before cooking, don't forget the bones: simmered with an onion and a bay leaf for an hour, they make a light stock worth freezing for future soups.</p>
 
-                        <div class="ledger-total-row">
-                            <span>ESTIMATED TOTAL MATRIX:</span>
-                            <span id="total-price-display">$7.68</span>
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">5. Variations & Substitutions</h2>
+                    <p style="color: #444; line-height: 1.7;">Chicken drumsticks work with the same method and are often even cheaper than thighs; just extend the initial rendering and cook-through time slightly to account for the bone shape. No fresh lemons on hand? Bottled lemon juice works for the glaze in a pinch, though you'll lose the zest's aromatic oils, which are doing real work here — a little extra cracked pepper helps compensate. For a spicier version, add a pinch of red pepper flakes when you bloom the black pepper in step two.</p>
+
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">6. Frequently Asked Questions</h2>
+                    <details class="faq-item">
+                        <summary>Why start the chicken in a cold skillet?</summary>
+                        <p style="color: #444; line-height: 1.7; margin-top: 8px;">A cold start lets the fat render gradually as the pan heats, which prevents the skin from sticking or tearing. Starting hot often seizes the skin to the pan before the fat has a chance to release.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I use boneless, skinless thighs instead?</summary>
+                        <p style="color: #444; line-height: 1.7; margin-top: 8px;">You can, but you'll need to add a tablespoon of oil since there's no skin to render fat, and the cost advantage of this recipe shrinks since boneless cuts cost more per pound.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What sides pair well with this?</summary>
+                        <p style="color: #444; line-height: 1.7; margin-top: 8px;">Simple rice or roasted potatoes work well since they can soak up the lemon-pepper glaze. A green vegetable sautéed in the leftover pan fat also makes good use of every part of the dish.</p>
+                    </details>
+                </div>
+
+                <!-- RIGHT COLUMN: FINANCIAL AUDIT STICKY SIDEBAR -->
+                <div class="sticky-sidebar">
+                    <div class="receipt-widget">
+                        <div class="font-mono" style="text-align: center; font-weight: bold; letter-spacing: 0.05em; font-size: 1.1rem;">SAVERBITES AUDIT TICKET</div>
+                        <div style="border-bottom: 2px dashed #141312; margin: 15px 0;"></div>
+                        
+                        <div class="font-mono" style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 8px;">
+                            <span>ITEM: LEMON_CHICK_01</span>
+                            <span>QTY: 2 SERVINGS</span>
                         </div>
-                        <div class="ledger-total-row cost-per-serving">
-                            <span>COST PER SERVING:</span>
-                            <span id="per-serving-display" class="color-yellow">$1.92</span>
+                        
+                        <div style="border-bottom: 1px solid #E0E0E0; margin: 10px 0;"></div>
+                        
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>01/ TOTAL YIELD CAP</span>
+                            <span style="font-weight: 600;">$3.50</span>
                         </div>
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>02/ COST PER SERVING</span>
+                            <span style="font-weight: 600; color: #00CC44;">$1.75</span>
+                        </div>
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>03/ ACTIVE BUILD TIME</span>
+                            <span>30 MIN</span>
+                        </div>
+                        
+                        <div style="border-bottom: 2px dashed #141312; margin: 15px 0;"></div>
+                        <div class="font-mono" style="text-align: center; letter-spacing: 0.15em; font-size: 0.9rem; opacity: 0.7;">|||| |||||| ||| ||||| ||</div>
                     </div>
                 </div>
 
-                <!-- Preparation Protocol -->
-                <div class="protocol-panel">
-                    <h2 class="font-display">Preparation Protocol</h2>
-                    <ol class="protocol-list">
-                        <li><strong>Dry the Chicken:</strong> Pat chicken thighs completely dry with a paper towel — this is essential for ultra-crispy skin.</li>
-                        <li><strong>Season:</strong> Season both sides generously with lemon pepper seasoning.</li>
-                        <li><strong>Render and Sear:</strong> Place skin-side down in a cold skillet, then turn the heat up to medium-high. Let the fat render out slowly until gold and crisp.</li>
-                        <li><strong>Flip and Finish:</strong> Flip the thighs, add fresh lemon juice directly into the pan drippings, and cook until internal temperature hits 165°F.</li>
-                    </ol>
-                </div>
             </div>
-        </article>
+        </section>
     </main>
 
     <footer class="footer" style="background-color: #141312; color: #fff; padding: 40px 20px; text-align: center;">
         <p>&copy; 2026 SaverBites. All rights reserved.</p>
         <div style="margin-top: 15px; font-size: 0.9rem;">
-            <a href="../about.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">About</a> |
-            <a href="../blog.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Blog</a> |
-            <a href="../contact.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Contact</a> |
-            <a href="../privacy.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
-            <a href="../terms.html" style="color: #FFC820; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+            <a href="../about.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">About</a> |
+            <a href="../blog.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Blog</a> |
+            <a href="../contact.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Contact</a> |
+            <a href="../privacy.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
+            <a href="../terms.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Terms of Service</a>
         </div>
     </footer>
 
-    <!-- Micro-Calculator Logic -->
-    <script>
-        const baseServings = 4;
-        let currentServings = 4;
-
-        const minusBtn = document.getElementById('minus-btn');
-        const plusBtn = document.getElementById('plus-btn');
-        const servingDisplay = document.getElementById('serving-multiplier');
-        const totalDisplay = document.getElementById('total-price-display');
-        const perServingDisplay = document.getElementById('per-serving-display');
-        const rows = document.querySelectorAll('.ingredient-item');
-
-        function formatQty(qty, isWhole) {
-            if (isWhole) return Math.round(qty).toString();
-            const rounded = Math.round(qty * 100) / 100;
-            // show 1 decimal unless it needs 2 for accuracy
-            const oneDecimal = Math.round(qty * 10) / 10;
-            return (Math.abs(oneDecimal - rounded) < 0.001) ? oneDecimal.toString() : rounded.toString();
-        }
-
-        function updateLedger() {
-            let newTotal = 0;
-            const factor = currentServings / baseServings;
-
-            servingDisplay.textContent = currentServings;
-
-            rows.forEach(row => {
-                const baseQty = parseFloat(row.getAttribute('data-base-qty'));
-                const unitPrice = parseFloat(row.getAttribute('data-unit-price'));
-                const unit = row.getAttribute('data-unit');
-                const isWhole = row.getAttribute('data-whole') === 'true';
-
-                const calculatedQty = baseQty * factor;
-                const calculatedCost = calculatedQty * unitPrice;
-                newTotal += calculatedCost;
-
-                const qtySpan = row.querySelector('.item-qty');
-                const costSpan = row.querySelector('.item-cost');
-
-                qtySpan.textContent = `${formatQty(calculatedQty, isWhole)} ${unit}`;
-                costSpan.textContent = `$${calculatedCost.toFixed(2)}`;
-            });
-
-            totalDisplay.textContent = `$${newTotal.toFixed(2)}`;
-            perServingDisplay.textContent = `$${(newTotal / currentServings).toFixed(2)}`;
-        }
-
-        plusBtn.addEventListener('click', () => { currentServings += 1; updateLedger(); });
-        minusBtn.addEventListener('click', () => { if (currentServings > 1) { currentServings -= 1; updateLedger(); } });
-    </script>
 </body>
 </html>
