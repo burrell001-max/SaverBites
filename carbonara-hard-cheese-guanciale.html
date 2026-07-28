@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Matrix: Carbonara Blueprint — SaverBites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .recipe-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; margin-top: 40px; }
+        @media (max-width: 768px) { .recipe-layout { grid-template-columns: 1fr; } }
+        
+        .audit-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.95rem; }
+        .audit-table th { background-color: #141312; color: #FFFFFF; text-align: left; padding: 12px; font-weight: 600; }
+        .audit-table td { padding: 12px; border-bottom: 1px solid #E0E0E0; }
+        .audit-table tr:hover { background-color: #F5F4F0; }
+
+        .step-block { margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px dashed #E0E0E0; }
+        .step-num { font-weight: bold; color: #00CC44; margin-right: 10px; }
+
+        .sticky-sidebar { position: sticky; top: 40px; }
+        .receipt-widget { background: #FFFFFF; color: #141312; border: 2px solid #141312; box-shadow: 5px 5px 0px #141312; padding: 25px; }
+
+        .faq-item { margin-bottom: 18px; }
+        .faq-item summary { cursor: pointer; font-weight: 600; color: #141312; padding: 4px 0; }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "name": "Carbonara Hard Cheese Matrix",
+      "image": ["https://burrell001-max.github.io/SaverBites/images/carbonara-hard-cheese-guanciale.jpg"],
+      "description": "True Roman carbonara built from raw egg yolks, concentrated pasta starch water, and rendered pork fat, with no heavy cream in sight.",
+      "recipeCategory": "Pasta",
+      "recipeCuisine": "Italian",
+      "keywords": "carbonara, guanciale pasta, egg yolk pasta sauce",
+      "recipeYield": "2 servings",
+      "totalTime": "PT20M",
+      "recipeIngredient": [
+        "200g rigatoni or spaghetti No. 5",
+        "80g guanciale or pancetta, diced",
+        "3 fresh egg yolks plus 1 whole egg",
+        "45g Pecorino Romano and Parmesan, grated",
+        "2g coarsely cracked black pepper"
+      ],
+      "recipeInstructions": [
+        { "@type": "HowToStep", "name": "Render the Fat", "text": "Dice the pork into matchsticks and render slowly in a cold skillet with no added oil until crisp and golden." },
+        { "@type": "HowToStep", "name": "Build the Egg Base", "text": "Whisk egg yolks, one whole egg, and grated hard cheese into a thick paste, then temper with a spoonful of cooled pork fat." },
+        { "@type": "HowToStep", "name": "Emulsify Off-Heat", "text": "Toss hot pasta in the pork fat off the heat, pour in the egg-cheese mixture, and stir in hot pasta water until glossy." }
+      ],
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1 serving"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">SAVER<span class="logo-accent" style="color: #00CC44;">BITES</span></a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../pasta.html" class="nav-link">Pasta Dishes</a>
+                <a href="../onepot.html" class="nav-link">One Pot Meals</a>
+                <a href="../vegetarian.html" class="nav-link">Vegetarian</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="background-color: #FFFFFF;">
+        <section class="section container" style="padding: 40px 20px;">
+            <a href="../pasta.html" style="color: #00CC44; text-decoration: none; font-weight: bold; font-size: 0.85rem;" class="font-mono">← BACK TO PASTA INDEX</a>
+            
+            <div class="recipe-layout">
+                
+                <!-- LEFT COLUMN: CONTENT & TABLES -->
+                <div>
+                    <span class="hero-badge font-mono" style="border-color: #141312; color: #141312; margin-bottom: 15px;">AUDIT ID: PASTA_CARBONARA_03</span>
+                    <h1 style="font-family: 'Fraunces', serif; font-size: 2.5rem; margin: 10px 0; color: #141312;">Carbonara Hard Cheese Matrix</h1>
+                    <p style="color: #555; line-height: 1.7; font-size: 1.1rem;">An elegant display of residual heat utilization. True Roman carbonara completely avoids heavy cream, using a rich emulsion of raw egg yolks, concentrated starch water, and rendered pork fats to achieve a premium velvet finish.</p>
+
+                    <p style="color: #444; line-height: 1.7; margin-top: 20px;">Carbonara sits at the higher end of the pasta recipes on this site, cost-wise, mostly because guanciale isn't cheap and there's no getting around needing real eggs and real hard cheese for the texture to work. But it's worth pointing out what it doesn't need: no cream, no butter, no separate sauce simmering on another burner. Everything that makes carbonara rich comes from five ingredients and heat management, which means the grocery bill is entirely concentrated in ingredients that actually matter to the final dish.</p>
+
+                    <p style="color: #444; line-height: 1.7; margin-top: 16px;">If this dish goes wrong, it's almost always the same failure: the eggs scramble instead of forming a sauce. That happens when the pan is still hot enough to cook the proteins too fast. Pulling the pasta off direct heat before the egg mixture goes in, and relying on residual warmth plus hot pasta water to finish the emulsion, is the entire trick — and it costs nothing extra to do right.</p>
+
+                    <!-- Ingredient Breakdown Ledger -->
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">1. Component Unit Ledger</h2>
+                    <table class="audit-table">
+                        <thead>
+                            <tr class="font-mono" style="font-size: 0.8rem;">
+                                <th>INGREDIENT COMPONENT</th>
+                                <th>QUANTITY USED</th>
+                                <th>UNIT COST MATRIX</th>
+                                <th>TOTAL COST</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rigatoni or Spaghetti No. 5</td>
+                                <td>200g</td>
+                                <td class="font-mono">$0.003 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.60</td>
+                            </tr>
+                            <tr>
+                                <td>Guanciale or Pancetta Asset</td>
+                                <td>80g</td>
+                                <td class="font-mono">$0.028 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$2.24</td>
+                            </tr>
+                            <tr>
+                                <td>Fresh Egg Yolks (plus 1 whole egg)</td>
+                                <td>3 Units</td>
+                                <td class="font-mono">$0.220 / unit</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.66</td>
+                            </tr>
+                            <tr>
+                                <td>Pecorino Romano / Parmesan Mix</td>
+                                <td>45g</td>
+                                <td class="font-mono">$0.020 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.90</td>
+                            </tr>
+                            <tr>
+                                <td>Coarsely Cracked Black Pepper</td>
+                                <td>2g</td>
+                                <td class="font-mono">$0.015 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.03</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Preparation Steps -->
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">2. Optimization Steps</h2>
+                    <div style="margin-top: 20px;">
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">01 /</span> <strong>Fat Rendering:</strong> Dice pork assets into thick matchsticks. Start in a cold skillet with no extra oil. Render slowly over medium-low heat for 6-8 minutes until the bits turn crisp and golden, maximizing liquid fat release — this fat is your entire cooking medium, so don't rush it or pour any of it out.</p>
+                        </div>
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">02 /</span> <strong>The Tempered Base:</strong> Whisk egg yolks, the single whole egg, and your grated hard cheese base together into a thick paste. Mix in 1 tablespoon of cooled pork fat to stabilize the egg proteins against premature scrambling once they meet the hot pasta.</p>
+                        </div>
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">03 /</span> <strong>Residual Emulsification:</strong> Toss hot al dente noodles directly in the pork fat skillet off-heat — this step is non-negotiable, since heat this direct will scramble the eggs on contact. Pour the egg-cheese paste over the top and stir vigorously. Add small increments of hot cooking water to let the ambient warmth transform the mixture into a glossy cream rather than clumped curds.</p>
+                        </div>
+                    </div>
+
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">3. Why the Numbers Work</h2>
+                    <p style="color: #444; line-height: 1.7;">Guanciale is by far the most expensive ingredient on this ledger, accounting for roughly half the total cost of the dish. Even so, at $2.21 a serving this still lands well under what a carbonara costs at a sit-down Italian restaurant, where the same core ingredients get marked up several times over. If guanciale isn't available or is priced too high locally, pancetta is a reasonable substitute that typically runs a bit cheaper.</p>
+
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">4. Storage & Leftovers</h2>
+                    <p style="color: #444; line-height: 1.7;">Like most egg-based pasta sauces, carbonara is best eaten immediately. Leftovers keep in the fridge for up to 2 days, but the texture changes on reheating — warm gently in a skillet over low heat with a splash of water, stirring constantly, and expect a slightly less silky result than fresh. Avoid microwaving on high, which tends to scramble the eggs outright.</p>
+
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">5. Variations & Substitutions</h2>
+                    <p style="color: #444; line-height: 1.7;">Bacon works in a pinch if guanciale and pancetta are both unavailable, though it brings a smokier flavor that's noticeably different from the traditional profile — still a satisfying dish, just not quite classic carbonara. For a lower-cholesterol version, two whole eggs can replace the yolk-heavy ratio, though the sauce will be slightly less rich and a touch more prone to separating.</p>
+
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">6. Frequently Asked Questions</h2>
+                    <details class="faq-item">
+                        <summary>Why did my carbonara turn into scrambled eggs?</summary>
+                        <p style="color: #444; line-height: 1.7; margin-top: 8px;">The pan was too hot when the egg mixture went in. Always take the skillet off the burner first, and rely on the pasta's residual heat plus hot pasta water to cook the eggs gently into a sauce.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Is it safe to eat the eggs only partially cooked?</summary>
+                        <p style="color: #444; line-height: 1.7; margin-top: 8px;">The residual heat from the pasta and pan does cook the eggs, though not to a fully hard state — this is standard for traditional carbonara. If you're concerned about raw egg, pasteurized eggs are a safer substitute with no real change to the technique.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I add cream to make it easier?</summary>
+                        <p style="color: #444; line-height: 1.7; margin-top: 8px;">You can, but it's not traditional and changes the character of the dish — cream masks a failed emulsion rather than fixing the technique. Once you've got the timing down, the eggs-and-cheese method is just as easy and considerably cheaper.</p>
+                    </details>
+                </div>
+
+                <!-- RIGHT COLUMN: FINANCIAL AUDIT STICKY SIDEBAR -->
+                <div class="sticky-sidebar">
+                    <div class="receipt-widget">
+                        <div class="font-mono" style="text-align: center; font-weight: bold; letter-spacing: 0.05em; font-size: 1.1rem;">SAVERBITES AUDIT TICKET</div>
+                        <div style="border-bottom: 2px dashed #141312; margin: 15px 0;"></div>
+                        
+                        <div class="font-mono" style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 8px;">
+                            <span>ITEM: CARB_03</span>
+                            <span>QTY: 2 SERVINGS</span>
+                        </div>
+                        
+                        <div style="border-bottom: 1px solid #E0E0E0; margin: 10px 0;"></div>
+                        
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>01/ TOTAL YIELD CAP</span>
+                            <span style="font-weight: 600;">$4.43</span>
+                        </div>
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>02/ COST PER SERVING</span>
+                            <span style="font-weight: 600; color: #00CC44;">$2.21</span>
+                        </div>
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>03/ ACTIVE BUILD TIME</span>
+                            <span>20 MIN</span>
+                        </div>
+                        
+                        <div style="border-bottom: 2px dashed #141312; margin: 15px 0;"></div>
+                        <div class="font-mono" style="text-align: center; letter-spacing: 0.15em; font-size: 0.9rem; opacity: 0.7;">|||| |||||| ||| ||||| ||</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="background-color: #141312; color: #fff; padding: 40px 20px; text-align: center;">
+        <p>&copy; 2026 SaverBites. All rights reserved.</p>
+        <div style="margin-top: 15px; font-size: 0.9rem;">
+            <a href="../about.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">About</a> |
+            <a href="../blog.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Blog</a> |
+            <a href="../contact.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Contact</a> |
+            <a href="../privacy.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
+            <a href="../terms.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+        </div>
+    </footer>
+
+</body>
+</html>

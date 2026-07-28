@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Matrix: Cacio e Pepe Blueprint — SaverBites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .recipe-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; margin-top: 40px; }
+        @media (max-width: 768px) { .recipe-layout { grid-template-columns: 1fr; } }
+        
+        .audit-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.95rem; }
+        .audit-table th { background-color: #141312; color: #FFFFFF; text-align: left; padding: 12px; font-weight: 600; }
+        .audit-table td { padding: 12px; border-bottom: 1px solid #E0E0E0; }
+        .audit-table tr:hover { background-color: #F5F4F0; }
+
+        .step-block { margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px dashed #E0E0E0; }
+        .step-num { font-weight: bold; color: #00CC44; margin-right: 10px; }
+
+        .sticky-sidebar { position: sticky; top: 40px; }
+        .receipt-widget { background: #FFFFFF; color: #141312; border: 2px solid #141312; box-shadow: 5px 5px 0px #141312; padding: 25px; }
+
+        .faq-item { margin-bottom: 18px; }
+        .faq-item summary { cursor: pointer; font-weight: 600; color: #141312; padding: 4px 0; }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "name": "Cacio e Pepe Blueprint",
+      "image": ["https://burrell001-max.github.io/SaverBites/images/cacio-e-pepe-blueprint.jpg"],
+      "description": "A luxurious emulsion built from nothing but starchy pasta water and finely grated Pecorino Romano, finished with freshly toasted black pepper.",
+      "recipeCategory": "Pasta",
+      "recipeCuisine": "Italian",
+      "keywords": "cacio e pepe, pecorino pasta, budget pasta",
+      "recipeYield": "2 servings",
+      "totalTime": "PT15M",
+      "recipeIngredient": [
+        "200g tonnarelli or spaghetti No. 5",
+        "60g Pecorino Romano, finely grated",
+        "3g whole black peppercorns",
+        "kosher salt, to taste"
+      ],
+      "recipeInstructions": [
+        { "@type": "HowToStep", "name": "Concentrate the Starch", "text": "Boil pasta in a shallow pan with less water than usual to build a highly starchy cooking liquid." },
+        { "@type": "HowToStep", "name": "Toast the Pepper", "text": "Crush whole peppercorns into a hot, dry skillet to release their oils before the pasta goes in." },
+        { "@type": "HowToStep", "name": "Emulsify Off-Heat", "text": "Whisk warm pasta water into finely grated cheese off the heat, then toss with the noodles away from direct flame." }
+      ],
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1 serving"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">SAVER<span class="logo-accent" style="color: #00CC44;">BITES</span></a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../pasta.html" class="nav-link">Pasta Dishes</a>
+                <a href="../onepot.html" class="nav-link">One Pot Meals</a>
+                <a href="../vegetarian.html" class="nav-link">Vegetarian</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="background-color: #FFFFFF;">
+        <section class="section container" style="padding: 40px 20px;">
+            <a href="../pasta.html" style="color: #00CC44; text-decoration: none; font-weight: bold; font-size: 0.85rem;" class="font-mono">← BACK TO PASTA INDEX</a>
+            
+            <div class="recipe-layout">
+                
+                <!-- LEFT COLUMN: CONTENT & TABLES -->
+                <div>
+                    <span class="hero-badge font-mono" style="border-color: #141312; color: #141312; margin-bottom: 15px;">AUDIT ID: PASTA_CACIO_01</span>
+                    <h1 style="font-family: 'Fraunces', serif; font-size: 2.5rem; margin: 10px 0; color: #141312;">Cacio e Pepe Blueprint</h1>
+                    <p style="color: #555; line-height: 1.7; font-size: 1.1rem;">A masterclass in culinary physics. By skipping pre-made sauces and relying strictly on the binding power of starchy cooking water and high-fat hard cheeses, we create a luxurious emulsion out of mere pennies.</p>
+
+                    <p style="color: #444; line-height: 1.7; margin-top: 20px;">Cacio e pepe has exactly three ingredients that matter — pasta, cheese, and pepper — which makes it one of the cheapest "restaurant-tier" dishes you can put together at home, but also one of the least forgiving. There's no sauce to hide behind if the technique goes wrong. The entire dish lives or dies on whether the starchy pasta water and melted cheese fat come together into a smooth cream or break into a grainy, clumped mess. Once you've got the temperature control down, though, it's a five-minute dinner that costs about a dollar a serving.</p>
+
+                    <p style="color: #444; line-height: 1.7; margin-top: 16px;">The most common failure point is adding the cheese while the pan is still directly over heat. Pecorino melts and then seizes at surprisingly low temperatures — too much heat too fast and the proteins clump into rubbery strings instead of dissolving into a sauce. The fix costs nothing: pull the pan off the burner before the cheese goes anywhere near it.</p>
+
+                    <!-- Ingredient Breakdown Ledger -->
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">1. Component Unit Ledger</h2>
+                    <table class="audit-table">
+                        <thead>
+                            <tr class="font-mono" style="font-size: 0.8rem;">
+                                <th>INGREDIENT COMPONENT</th>
+                                <th>QUANTITY USED</th>
+                                <th>UNIT COST MATRIX</th>
+                                <th>TOTAL COST</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tonnarelli or Spaghetti No. 5</td>
+                                <td>200g</td>
+                                <td class="font-mono">$0.003 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.60</td>
+                            </tr>
+                            <tr>
+                                <td>Pecorino Romano (Finely Grated)</td>
+                                <td>60g</td>
+                                <td class="font-mono">$0.021 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$1.26</td>
+                            </tr>
+                            <tr>
+                                <td>Whole Black Peppercorns</td>
+                                <td>3g</td>
+                                <td class="font-mono">$0.015 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.05</td>
+                            </tr>
+                            <tr>
+                                <td>Kosher Salt & Water asset</td>
+                                <td>—</td>
+                                <td class="font-mono">Negligible</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.02</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Preparation Steps -->
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">2. Optimization Steps</h2>
+                    <div style="margin-top: 20px;">
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">01 /</span> <strong>Starch Concentration:</strong> Boil pasta in a shallow pan with less water than usual — just enough to cover it. This concentrates the structural starches in the water, which is vital for preventing the cheese from clumping later. Salt the water lightly, since the Pecorino brings plenty of salt on its own.</p>
+                        </div>
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">02 /</span> <strong>Toast the Piperine:</strong> Crush whole peppercorns coarsely and toast them in a hot, dry skillet for about 60 seconds until fragrant. Toasting releases the oils and expands the flavor profile, making a small quantity go much further than pre-ground pepper.</p>
+                        </div>
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">03 /</span> <strong>The Cold Emulsion:</strong> Whisk a ladle of warm pasta water into your finely grated cheese off-heat to create a smooth paste before it ever touches the pan. Toss with the hot noodles away from direct flame, adding pasta water a splash at a time, to prevent the dairy fats from separating into a grainy mess.</p>
+                        </div>
+                    </div>
+
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">3. Why the Numbers Work</h2>
+                    <p style="color: #444; line-height: 1.7;">Pecorino Romano is the only ingredient here with any real cost per gram, and even at a premium hard-cheese price it's still cheaper than most jarred pasta sauces once you account for how far 60 grams stretches across two servings. There's no meat, no oil beyond what clings to the pasta, and no dairy beyond the cheese itself. At roughly a dollar a serving, this beats almost every boxed pasta-and-sauce kit on the shelf while tasting closer to what you'd pay $18 for at a restaurant.</p>
+
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">4. Storage & Leftovers</h2>
+                    <p style="color: #444; line-height: 1.7;">Cacio e pepe is best eaten fresh — the emulsion doesn't hold up well overnight and tends to separate or clump once refrigerated. If you do have leftovers, store them in an airtight container for up to 2 days and reheat gently in a skillet with a splash of water or milk, stirring constantly to coax the sauce back together. It won't be quite as glossy as fresh, but it's still worth eating rather than tossing.</p>
+
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">5. Variations & Substitutions</h2>
+                    <p style="color: #444; line-height: 1.7;">No Pecorino on hand? Parmesan works in a pinch, though it's less salty and sharp, so taste and adjust seasoning as you go — some cooks blend the two for a milder, more forgiving emulsion. A finishing pat of butter added along with the cheese adds richness and a bit more insurance against the sauce breaking, at a negligible cost increase.</p>
+
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">6. Frequently Asked Questions</h2>
+                    <details class="faq-item">
+                        <summary>Why did my sauce turn clumpy instead of creamy?</summary>
+                        <p style="color: #444; line-height: 1.7; margin-top: 8px;">This means the cheese hit too much heat too fast. Always mix cheese with pasta water off the burner, and add it to the pasta away from direct flame — residual heat is enough to bring it together.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I use pre-grated cheese from a container?</summary>
+                        <p style="color: #444; line-height: 1.7; margin-top: 8px;">It's not recommended — pre-grated cheese usually contains anti-caking agents that interfere with a smooth emulsion. Grating a block yourself, finely, makes a noticeable difference here.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How much pasta water do I actually need?</summary>
+                        <p style="color: #444; line-height: 1.7; margin-top: 8px;">Start with about half a cup and add more a tablespoon at a time as needed. It's easier to loosen a sauce that's too thick than to fix one that's gone too thin.</p>
+                    </details>
+                </div>
+
+                <!-- RIGHT COLUMN: FINANCIAL AUDIT STICKY SIDEBAR -->
+                <div class="sticky-sidebar">
+                    <div class="receipt-widget">
+                        <div class="font-mono" style="text-align: center; font-weight: bold; letter-spacing: 0.05em; font-size: 1.1rem;">SAVERBITES AUDIT TICKET</div>
+                        <div style="border-bottom: 2px dashed #141312; margin: 15px 0;"></div>
+                        
+                        <div class="font-mono" style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 8px;">
+                            <span>ITEM: CACIO_PEPE_01</span>
+                            <span>QTY: 2 SERVINGS</span>
+                        </div>
+                        
+                        <div style="border-bottom: 1px solid #E0E0E0; margin: 10px 0;"></div>
+                        
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>01/ TOTAL YIELD CAP</span>
+                            <span style="font-weight: 600;">$1.93</span>
+                        </div>
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>02/ COST PER SERVING</span>
+                            <span style="font-weight: 600; color: #00CC44;">$0.97</span>
+                        </div>
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>03/ ACTIVE BUILD TIME</span>
+                            <span>15 MIN</span>
+                        </div>
+                        
+                        <div style="border-bottom: 2px dashed #141312; margin: 15px 0;"></div>
+                        <div class="font-mono" style="text-align: center; letter-spacing: 0.15em; font-size: 0.9rem; opacity: 0.7;">|||| |||||| ||| ||||| ||</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="background-color: #141312; color: #fff; padding: 40px 20px; text-align: center;">
+        <p>&copy; 2026 SaverBites. All rights reserved.</p>
+        <div style="margin-top: 15px; font-size: 0.9rem;">
+            <a href="../about.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">About</a> |
+            <a href="../blog.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Blog</a> |
+            <a href="../contact.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Contact</a> |
+            <a href="../privacy.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
+            <a href="../terms.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+        </div>
+    </footer>
+
+</body>
+</html>
