@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Matrix: Chili Con Carne — SaverBites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .recipe-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; margin-top: 40px; }
+        @media (max-width: 768px) { .recipe-layout { grid-template-columns: 1fr; } }
+        
+        .audit-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.95rem; }
+        .audit-table th { background-color: #141312; color: #FFFFFF; text-align: left; padding: 12px; font-weight: 600; }
+        .audit-table td { padding: 12px; border-bottom: 1px solid #E0E0E0; }
+        .audit-table tr:hover { background-color: #F5F4F0; }
+
+        .step-block { margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px dashed #E0E0E0; }
+        .step-num { font-weight: bold; color: #00CC44; margin-right: 10px; }
+
+        .sticky-sidebar { position: sticky; top: 40px; }
+        .receipt-widget { background: #FFFFFF; color: #141312; border: 2px solid #141312; box-shadow: 5px 5px 0px #141312; padding: 25px; }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "name": "Chili Con Carne (Bean Ratio Optimization)",
+      "author": { "@type": "Organization", "name": "SaverBites" },
+      "description": "A volume expansion play engineering a 50/50 volumetric split between ground beef and red kidney beans, stretching expensive beef into a high-density meal prep run.",
+      "recipeCategory": "One Pot",
+      "recipeCuisine": "Tex-Mex",
+      "keywords": "chili con carne, ground beef chili, meal prep",
+      "recipeYield": "4 servings",
+      "totalTime": "PT1H",
+      "prepTime": "PT15M",
+      "cookTime": "PT45M",
+      "recipeIngredient": [
+        "400g lean ground beef (80/20)",
+        "2 cans (500g) red kidney beans, drained",
+        "800g crushed canned tomatoes",
+        "150g yellow onion",
+        "15g fresh garlic",
+        "25g spice substrate (chili powder, cumin, cocoa)"
+      ],
+      "recipeInstructions": [
+        { "@type": "HowToStep", "name": "Maillard Reaction Maximization", "text": "Sear ground beef in a hot pot without breaking it up, letting a deep brown crust form on the bottom layer first." },
+        { "@type": "HowToStep", "name": "Spice Blooming", "text": "Push the meat aside and toast the chili and cumin spices directly in the rendered beef fat for 60 seconds." },
+        { "@type": "HowToStep", "name": "The Starch Reduction", "text": "Add tomatoes and kidney beans and simmer uncovered on low heat for 45 minutes to concentrate and thicken naturally." }
+      ],
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "1.82" }
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">SAVER<span class="logo-accent" style="color: #00CC44;">BITES</span></a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../pasta.html" class="nav-link">Pasta Dishes</a>
+                <a href="../onepot.html" class="nav-link">One Pot Meals</a>
+                <a href="../vegetarian.html" class="nav-link">Vegetarian</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="background-color: #FFFFFF;">
+        <section class="section container" style="padding: 40px 20px;">
+            <a href="../onepot.html" style="color: #00CC44; text-decoration: none; font-weight: bold; font-size: 0.85rem;" class="font-mono">← BACK TO ONE POT INDEX</a>
+            
+            <div class="recipe-layout">
+                
+                <!-- LEFT COLUMN: CONTENT & TABLES -->
+                <div>
+                    <span class="hero-badge font-mono" style="border-color: #141312; color: #141312; margin-bottom: 15px;">AUDIT ID: ONEPOT_CHILI_01</span>
+                    <h1 style="font-family: 'Fraunces', serif; font-size: 2.5rem; margin: 10px 0; color: #141312;">Chili Con Carne (Bean Ratio Optimization)</h1>
+                    <p style="color: #555; line-height: 1.7; font-size: 1.1rem;">A volume expansion play. By engineering a 50/50 volumetric split between ground beef and high-protein red kidney beans, we stretch expensive beef assets into a high-density meal prep run that retains a premium tex-mex flavor profile.</p>
+
+                    <!-- Ingredient Breakdown Ledger -->
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">1. Component Unit Ledger</h2>
+                    <table class="audit-table">
+                        <thead>
+                            <tr class="font-mono" style="font-size: 0.8rem;">
+                                <th>INGREDIENT COMPONENT</th>
+                                <th>QUANTITY USED</th>
+                                <th>UNIT COST MATRIX</th>
+                                <th>TOTAL COST</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lean Ground Beef (80/20)</td>
+                                <td>400g</td>
+                                <td class="font-mono">$0.011 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$4.40</td>
+                            </tr>
+                            <tr>
+                                <td>Red Kidney Beans (Canned/Drained)</td>
+                                <td>2 Cans (500g)</td>
+                                <td class="font-mono">$0.0016 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.80</td>
+                            </tr>
+                            <tr>
+                                <td>Crushed Tomatoes (Canned)</td>
+                                <td>800g</td>
+                                <td class="font-mono">$0.0015 / g</td>
+                                <td class="font-mono" style="font-weight: 600;">$1.20</td>
+                            </tr>
+                            <tr>
+                                <td>Yellow Onion & Fresh Garlic</td>
+                                <td>150g / 15g</td>
+                                <td class="font-mono">$0.003 / unit</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.55</td>
+                            </tr>
+                            <tr>
+                                <td>Spice Substrate Matrix (Chili, Cumin, Cocoa)</td>
+                                <td>25g</td>
+                                <td class="font-mono">Bulk Pricing</td>
+                                <td class="font-mono" style="font-weight: 600;">$0.35</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Preparation Steps -->
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">2. Optimization Steps</h2>
+                    <div style="margin-top: 20px;">
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">01 /</span> <strong>Maillard Reaction Maximization:</strong> Sear your ground beef in a roaring hot pot without breaking it up immediately. Let a deep brown crust develop on the bottom layer first. This concentrated chemical browning builds a savory foundation that seasons the entire liquid yield.</p>
+                        </div>
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">02 /</span> <strong>Spice Blooming:</strong> Push the meat aside and drop your spices directly into the hot rendered beef fat at the bottom of the pot. Toasting the cumin and chili powders in warm fat for 60 seconds unlocks fat-soluble aroma compounds that remain completely dormant if boiled in liquid.</p>
+                        </div>
+                        <div class="step-block">
+                            <p style="color: #141312; line-height: 1.7;"><span class="step-num font-mono">03 /</span> <strong>The Starch Reduction:</strong> Pour in your tomatoes and kidney beans. Simmer slowly on low heat for 45 minutes uncovered. Allowing the liquids to steadily evaporate concentrates the remaining starch fractions, resulting in a rich, velvety chili without needing artificial thickening agents.</p>
+                        </div>
+                    </div>
+
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">3. Why the Numbers Work</h2>
+                    <p style="color: #555; line-height: 1.7;">Ground beef is the dominant cost at $4.40 of the $7.30 total, but the "bean ratio optimization" in the title is what keeps per-serving cost at a reasonable $1.82: kidney beans cost roughly 7x less per gram than beef ($0.0016/g vs $0.011/g), so shifting volume toward beans without sacrificing the beef-forward flavor stretches the batch significantly. A 50/50 volumetric split means each serving still tastes meat-driven, since beef's flavor compounds dominate the palate even when it's not the majority ingredient by weight.</p>
+
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">4. Storage &amp; Leftovers</h2>
+                    <p style="color: #555; line-height: 1.7;">Refrigerate covered for up to 5 days — chili is a textbook example of a dish that improves overnight. Reheat on the stovetop over medium-low heat, adding a splash of water or broth if it's thickened too much. Freezes exceptionally well for up to 4 months in an airtight container.</p>
+
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">5. Variations</h2>
+                    <ul style="color: #555; line-height: 1.8; padding-left: 20px;">
+                        <li><strong>Shift the ratio further:</strong> Dropping to 300g of beef and adding a third can of beans lowers cost further while keeping the dish hearty.</li>
+                        <li><strong>Add heat:</strong> Diced jalapeño or a spoonful of chipotle in adobo raises the spice level for negligible extra cost.</li>
+                        <li><strong>Ground turkey swap:</strong> Substituting ground turkey for beef can lower cost depending on local pricing, though it changes the fat profile and flavor.</li>
+                    </ul>
+
+                    <h2 style="font-family: 'Fraunces', serif; margin-top: 40px; color: #141312;">6. FAQ</h2>
+                    <div style="color: #555; line-height: 1.7;">
+                        <p><strong>Why add cocoa powder to chili?</strong> A small amount of unsweetened cocoa deepens the color and adds a subtle bitterness that rounds out the spice blend — it's a classic trick borrowed from mole-style sauces, not a sweetener.</p>
+                        <p style="margin-top: 12px;"><strong>Why sear the beef without breaking it up right away?</strong> Letting a solid crust form first maximizes the browned surface area, which builds far more flavor than immediately crumbling the meat into small bits.</p>
+                        <p style="margin-top: 12px;"><strong>Can I use dry kidney beans instead of canned?</strong> Yes — soak and cook them separately first, which typically lowers the bean cost further at the expense of extra prep time.</p>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: FINANCIAL AUDIT STICKY SIDEBAR -->
+                <div class="sticky-sidebar">
+                    <div class="receipt-widget">
+                        <div class="font-mono" style="text-align: center; font-weight: bold; letter-spacing: 0.05em; font-size: 1.1rem;">SAVERBITES AUDIT TICKET</div>
+                        <div style="border-bottom: 2px dashed #141312; margin: 15px 0;"></div>
+                        
+                        <div class="font-mono" style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 8px;">
+                            <span>ITEM: CHILI_ONEPOT_01</span>
+                            <span>QTY: 4 SERVINGS</span>
+                        </div>
+                        
+                        <div style="border-bottom: 1px solid #E0E0E0; margin: 10px 0;"></div>
+                        
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>01/ TOTAL YIELD CAP</span>
+                            <span style="font-weight: 600;">$7.30</span>
+                        </div>
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>02/ COST PER SERVING</span>
+                            <span style="font-weight: 600; color: #00CC44;">$1.82</span>
+                        </div>
+                        <div class="font-mono" style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                            <span>03/ ACTIVE BUILD TIME</span>
+                            <span>55 MIN</span>
+                        </div>
+                        
+                        <div style="border-bottom: 2px dashed #141312; margin: 15px 0;"></div>
+                        <div class="font-mono" style="text-align: center; letter-spacing: 0.15em; font-size: 0.9rem; opacity: 0.7;">|||| |||||| ||| ||||| ||</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="background-color: #141312; color: #fff; padding: 40px 20px; text-align: center;">
+        <p>&copy; 2026 SaverBites. All rights reserved.</p>
+        <div style="margin-top: 15px; font-size: 0.9rem;">
+            <a href="../about.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">About</a> |
+            <a href="../blog.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Blog</a> |
+            <a href="../contact.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Contact</a> |
+            <a href="../privacy.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Privacy Policy</a> |
+            <a href="../terms.html" style="color: #00CC44; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+        </div>
+    </footer>
+
+</body>
+</html>
