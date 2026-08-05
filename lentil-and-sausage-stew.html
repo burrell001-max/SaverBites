@@ -12,7 +12,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bulk Pasta Audits: Gram-for-Gram Cost Analysis of Boxed vs. Fresh — SaverBites</title>
+    <title>Lentil & Sausage Stew: Halving Your Meat Bill With Dry Lentils — SaverBites</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -35,9 +35,9 @@
     <main class="container section">
         <article class="recipe-container">
             <header class="recipe-post-header">
-                <span class="card-category font-mono">BULK / METRICS</span>
-                <h1>Bulk Pasta Audits: Gram-for-Gram Cost Analysis of Boxed vs. Fresh</h1>
-                <p class="recipe-intro">Is homemade pasta actually cheaper, or are you paying with your time? We weigh bulk semolina flour against standard boxed pasta on a true cost-per-ounce basis.</p>
+                <span class="card-category font-mono">LEGUMES / MEAT-STRETCH</span>
+                <h1>Lentil & Sausage Stew: Halving Your Meat Bill With Dry Lentils</h1>
+                <p class="recipe-intro">Two links of smoked sausage, sliced thin, season a full pound of dry brown lentils. Dry lentils beat canned by nearly 60% per gram of protein once cooking liquid is factored in.</p>
             </header>
 
             <div class="recipe-blueprint-grid">
@@ -48,7 +48,7 @@
                         <div class="serving-control font-mono">
                             <span>SERVINGS:</span>
                             <button class="serve-btn" id="minus-btn">-</button>
-                            <span id="serving-multiplier" class="bold">4</span>
+                            <span id="serving-multiplier" class="bold">6</span>
                             <button class="serve-btn" id="plus-btn">+</button>
                         </div>
                     </div>
@@ -60,34 +60,39 @@
                             <span>UNIT COST</span>
                         </div>
 
-                        <div class="ledger-row ingredient-item" data-base-qty="10" data-unit-price="0.06" data-unit="oz" data-whole="false">
-                            <span>Semolina Flour (Bulk Bag)</span>
-                            <span class="item-qty">10 oz</span>
-                            <span class="item-cost">$0.60</span>
+                        <div class="ledger-row ingredient-item" data-base-qty="2" data-unit-price="2.0" data-unit="links" data-whole="true">
+                            <span>Smoked Sausage, Sliced</span>
+                            <span class="item-qty">2 links</span>
+                            <span class="item-cost">$4.00</span>
                         </div>
-                        <div class="ledger-row ingredient-item" data-base-qty="3" data-unit-price="0.25" data-unit="large" data-whole="true">
-                            <span>Large Eggs</span>
-                            <span class="item-qty">3 large</span>
-                            <span class="item-cost">$0.75</span>
+                        <div class="ledger-row ingredient-item" data-base-qty="1" data-unit-price="1.8" data-unit="lb" data-whole="false">
+                            <span>Dry Brown Lentils</span>
+                            <span class="item-qty">1 lb</span>
+                            <span class="item-cost">$1.80</span>
                         </div>
-                        <div class="ledger-row ingredient-item" data-base-qty="1" data-unit-price="0.18" data-unit="tbsp" data-whole="false">
-                            <span>Olive Oil</span>
-                            <span class="item-qty">1 tbsp</span>
-                            <span class="item-cost">$0.18</span>
+                        <div class="ledger-row ingredient-item" data-base-qty="2" data-unit-price="0.25" data-unit="carrots" data-whole="true">
+                            <span>Carrots, Diced</span>
+                            <span class="item-qty">2 carrots</span>
+                            <span class="item-cost">$0.50</span>
                         </div>
-                        <div class="ledger-row ingredient-item" data-base-qty="1" data-unit-price="0.02" data-unit="tsp" data-whole="false">
-                            <span>Salt</span>
-                            <span class="item-qty">1 tsp</span>
-                            <span class="item-cost">$0.02</span>
+                        <div class="ledger-row ingredient-item" data-base-qty="1" data-unit-price="0.3" data-unit="onion" data-whole="true">
+                            <span>Yellow Onion, Diced</span>
+                            <span class="item-qty">1 onion</span>
+                            <span class="item-cost">$0.30</span>
+                        </div>
+                        <div class="ledger-row ingredient-item" data-base-qty="6" data-unit-price="0.18" data-unit="cups" data-whole="false">
+                            <span>Vegetable or Chicken Broth</span>
+                            <span class="item-qty">6 cups</span>
+                            <span class="item-cost">$1.08</span>
                         </div>
 
                         <div class="ledger-total-row">
                             <span>ESTIMATED TOTAL MATRIX:</span>
-                            <span id="total-price-display">$1.55</span>
+                            <span id="total-price-display">$7.68</span>
                         </div>
                         <div class="ledger-total-row cost-per-serving">
                             <span>COST PER SERVING:</span>
-                            <span id="per-serving-display" class="color-yellow">$0.39</span>
+                            <span id="per-serving-display" class="color-yellow">$1.28</span>
                         </div>
                     </div>
                 </div>
@@ -96,19 +101,18 @@
                 <div class="protocol-panel">
                     <h2 class="font-display">Preparation Protocol</h2>
                     <ol class="protocol-list">
-                        <li><strong>Mound and Well:</strong> Pour semolina onto a work surface and form a well in the center. Crack eggs and oil into the well.</li>
-                        <li><strong>Knead:</strong> Gradually incorporate flour into the eggs with a fork, then knead by hand for 8-10 minutes until smooth and elastic.</li>
-                        <li><strong>Rest:</strong> Wrap dough in plastic and rest at room temperature to relax the gluten.</li>
-                        <li><strong>Roll and Cut:</strong> Roll dough thin with a pasta machine or rolling pin, then cut into the shape of your choice.</li>
-                        <li><strong>Cook:</strong> Boil fresh pasta in salted water for just 2-3 minutes, since fresh sheets cook far faster than boxed dry pasta.</li>
+                        <li><strong>Brown the Sausage:</strong> Sear sliced sausage in a large pot over medium heat until browned, about 4 minutes.</li>
+                        <li><strong>Sweat the Vegetables:</strong> Add carrots and onion to the pot and cook until softened, about 5 minutes.</li>
+                        <li><strong>Simmer:</strong> Add dry lentils and broth. Bring to a boil, then reduce heat and simmer uncovered for 25-30 minutes until lentils are tender.</li>
+                        <li><strong>Rest and Serve:</strong> Let the stew rest for 5 minutes off heat to thicken slightly before serving.</li>
                     </ol>
 
                     <div class="auditor-notes" style="margin-top: 30px; padding-top: 20px; border-top: 1px dashed #E0E0E0;">
                         <h2 class="font-display" style="margin-bottom: 10px;">Auditor's Notes</h2>
                         <ul style="line-height: 1.7; padding-left: 20px; margin: 0;">
-                        <li style="margin-bottom: 10px;"><strong>Swap:</strong> All-purpose flour can replace semolina in a pinch, though the dough will be slightly softer and less toothsome once cooked.</li>
-                        <li style="margin-bottom: 10px;"><strong>Storage:</strong> Fresh pasta dries well for later use — lay cut noodles flat for an hour, then freeze in nests; they cook straight from frozen.</li>
-                        <li style="margin-bottom: 10px;"><strong>Scale:</strong> Kneading time increases with batch size — a stand mixer with a dough hook is worth it once you're making more than a double batch by hand.</li>
+                        <li style="margin-bottom: 10px;"><strong>Swap:</strong> Any smoked sausage link works here; even a small amount goes a long way since it's seasoning the whole pot, not serving as the main protein.</li>
+                        <li style="margin-bottom: 10px;"><strong>Storage:</strong> Keeps 5 days refrigerated and freezes for up to 3 months — lentils hold their shape well through freezing and reheating, unlike some legumes.</li>
+                        <li style="margin-bottom: 10px;"><strong>Scale:</strong> Lentils absorb more broth than they look like they will — when doubling, add broth gradually rather than all at once so the stew doesn't turn soupy.</li>
                         </ul>
                     </div>
 
@@ -130,8 +134,8 @@
 
     <!-- Micro-Calculator Logic -->
     <script>
-        const baseServings = 4;
-        let currentServings = 4;
+        const baseServings = 6;
+        let currentServings = 6;
 
         const minusBtn = document.getElementById('minus-btn');
         const plusBtn = document.getElementById('plus-btn');
